@@ -1,0 +1,735 @@
+[
+  {
+    "id": "trafficking-fentanyl",
+    "title": "Trafficking in Fentanyl",
+    "statute": "O.C.G.A. § 16-13-31 (FEAR Act)",
+    "type": "Felony",
+    "description": "Possession, sale, or delivery of 4 grams or more of fentanyl or a mixture containing fentanyl. Mandatory minimums apply.",
+    "variables": [
+      {
+        "id": "weight",
+        "label": "Weight (grams)",
+        "unit": "g",
+        "type": "number",
+        "ranges": [
+          {
+            "min": 4,
+            "max": 8,
+            "sentence": "Mandatory min 10 years",
+            "fine": 75000,
+            "severity_level": "Level 1"
+          },
+          {
+            "min": 8,
+            "max": 28,
+            "sentence": "Mandatory min 15 years",
+            "fine": 250000,
+            "severity_level": "Level 2"
+          },
+          {
+            "min": 28,
+            "max": null,
+            "sentence": "Mandatory min 35 years (to Life)",
+            "fine": 750000,
+            "severity_level": "Level 3"
+          }
+        ]
+      }
+    ],
+    "notes": "Sentencing under 2024 FEAR Act. Extremely strict liability.",
+    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence if defendant provides substantial help to police. (2) Judicial Safety Valve - Judge may depart from mandatory min if: No weapon, no death/injury, no prior felony drug conviction, not a leader, and interests of justice served."
+  },
+  {
+    "id": "possession-sch-1-2",
+    "title": "Possession of Schedule I or II Controlled Substance",
+    "statute": "O.C.G.A. § 16-13-30(a)",
+    "type": "Felony",
+    "description": "Unlawful possession of Schedule I (e.g., Heroin, LSD, MDMA) or Sched II Narcotic (e.g., Cocaine, Meth, Oxycodone).",
+    "variables": [
+      {
+        "id": "offense_count",
+        "label": "History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "2 to 15 years",
+            "fine": "Up to 100000"
+          },
+          {
+            "label": "2nd or Subsequent",
+            "sentence": "5 to 30 years",
+            "fine": "Up to 100000"
+          }
+        ]
+      },
+      {
+        "id": "weight",
+        "label": "Weight (if applicable, for non-narcotic)",
+        "type": "select",
+        "options": [
+          {
+            "label": "General / Trace Amount",
+            "sentence": "See History Range"
+          },
+          {
+            "label": "< 1g (Solid) or < 1ml (Liquid)",
+            "sentence": "1 to 3 years"
+          },
+          {
+            "label": "1g - 4g (Solid)",
+            "sentence": "1 to 8 years"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "possession-sch-3-4-5",
+    "title": "Possession of Schedule III, IV, or V",
+    "statute": "O.C.G.A. § 16-13-30(b)",
+    "type": "Felony",
+    "description": "Unlawful possession of Schedule III (Steroids, Ketamine), IV (Xanax, Valium), or V (Codeine cough syrup).",
+    "variables": [
+      {
+        "id": "offense",
+        "label": "Offense History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "1 to 3 years",
+            "fine": "Up to 100000"
+          },
+          {
+            "label": "2nd Offense",
+            "sentence": "1 to 5 years",
+            "fine": "Up to 100000"
+          },
+          {
+            "label": "3rd or Subsequent",
+            "sentence": "1 to 5 years",
+            "fine": "Up to 100000"
+          }
+        ]
+      }
+    ],
+    "notes": "Flunitrazepam (Rohypnol) has enhanced penalties (5-30 years)."
+  },
+  {
+    "id": "trafficking-cocaine",
+    "title": "Trafficking in Cocaine",
+    "statute": "O.C.G.A. § 16-13-31",
+    "type": "Felony",
+    "description": "Possession, sale, or delivery of 28 grams or more of cocaine/mixture.",
+    "variables": [
+      {
+        "id": "weight",
+        "label": "Weight (grams)",
+        "unit": "g",
+        "type": "number",
+        "ranges": [
+          {
+            "min": 28,
+            "max": 200,
+            "sentence": "Mandatory min 10 years",
+            "fine": 200000,
+            "severity_level": "Level 1"
+          },
+          {
+            "min": 200,
+            "max": 400,
+            "sentence": "Mandatory min 15 years",
+            "fine": 300000,
+            "severity_level": "Level 2"
+          },
+          {
+            "min": 400,
+            "max": null,
+            "sentence": "Mandatory min 25 years",
+            "fine": 1000000,
+            "severity_level": "Level 3"
+          }
+        ]
+      }
+    ],
+    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence for help. (2) Judicial Safety Valve - Departure allowed if: No weapon, no death/injury, no prior felony drug conviction, not a leader."
+  },
+  {
+    "id": "trafficking-meth",
+    "title": "Trafficking in Methamphetamine",
+    "statute": "O.C.G.A. § 16-13-31(e)",
+    "type": "Felony",
+    "description": "Possession, sale, or delivery of 28 grams or more of methamphetamine/mixture.",
+    "variables": [
+      {
+        "id": "weight",
+        "label": "Weight (grams)",
+        "unit": "g",
+        "type": "number",
+        "ranges": [
+          {
+            "min": 28,
+            "max": 200,
+            "sentence": "Mandatory min 10 years",
+            "fine": 200000,
+            "severity_level": "Level 1"
+          },
+          {
+            "min": 200,
+            "max": 400,
+            "sentence": "Mandatory min 15 years",
+            "fine": 300000,
+            "severity_level": "Level 2"
+          },
+          {
+            "min": 400,
+            "max": null,
+            "sentence": "Mandatory min 25 years",
+            "fine": 1000000,
+            "severity_level": "Level 3"
+          }
+        ]
+      }
+    ],
+    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence for help. (2) Judicial Safety Valve - Departure allowed if: No weapon, no death/injury, no prior felony drug conviction, not a leader."
+  },
+  {
+    "id": "trafficking-heroin",
+    "title": "Trafficking in Heroin/Opioids",
+    "statute": "O.C.G.A. § 16-13-31(b)",
+    "type": "Felony",
+    "description": "Possession, sale, or delivery of 4 grams or more of heroin, morphine, or opium.",
+    "variables": [
+      {
+        "id": "weight",
+        "label": "Weight (grams)",
+        "unit": "g",
+        "type": "number",
+        "ranges": [
+          {
+            "min": 4,
+            "max": 14,
+            "sentence": "Mandatory min 5 years",
+            "fine": 50000,
+            "severity_level": "Level 1"
+          },
+          {
+            "min": 14,
+            "max": 28,
+            "sentence": "Mandatory min 10 years",
+            "fine": 100000,
+            "severity_level": "Level 2"
+          },
+          {
+            "min": 28,
+            "max": null,
+            "sentence": "Mandatory min 25 years",
+            "fine": 500000,
+            "severity_level": "Level 3"
+          }
+        ]
+      }
+    ],
+    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence for help. (2) Judicial Safety Valve - Departure allowed if: No weapon, no death/injury, no prior felony drug conviction, not a leader."
+  },
+  {
+    "id": "trafficking-marijuana",
+    "title": "Trafficking in Marijuana",
+    "statute": "O.C.G.A. § 16-13-31(c)",
+    "type": "Felony",
+    "description": "Possession, sale, or delivery of more than 10 lbs of marijuana. All trafficking carries maximum 30 years imprisonment.",
+    "variables": [
+      {
+        "id": "weight",
+        "label": "Weight (pounds)",
+        "unit": "lbs",
+        "type": "number",
+        "ranges": [
+          {
+            "min": 10,
+            "max": 2000,
+            "sentence": "5 to 30 years (Mandatory min 5 years)",
+            "fine": 100000,
+            "severity_level": "Level 1"
+          },
+          {
+            "min": 2000,
+            "max": 10000,
+            "sentence": "7 to 30 years (Mandatory min 7 years)",
+            "fine": 250000,
+            "severity_level": "Level 2"
+          },
+          {
+            "min": 10000,
+            "max": null,
+            "sentence": "15 to 30 years (Mandatory min 15 years)",
+            "fine": 1000000,
+            "severity_level": "Level 3"
+          }
+        ]
+      }
+    ],
+    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence for help. (2) Judicial Safety Valve - Departure allowed if: No weapon, no death/injury, no prior felony drug conviction, not a leader."
+  },
+  {
+    "id": "possession-marijuana-misd",
+    "title": "Possession of Marijuana (Less than 1 oz)",
+    "statute": "O.C.G.A. § 16-13-2(b)",
+    "type": "Misdemeanor",
+    "description": "Possession of 1 ounce or less of marijuana.",
+    "base_penalty": {
+      "sentence": "Up to 12 months",
+      "fine": 1000
+    },
+    "notes": "Often eligible for pre-trial diversion or city ordinance violations in some jurisdictions."
+  },
+  {
+    "id": "possession-marijuana-felony",
+    "title": "Possession of Marijuana (More than 1 oz)",
+    "statute": "O.C.G.A. § 16-13-30(j)",
+    "type": "Felony",
+    "description": "Possession of more than 1 ounce of marijuana.",
+    "base_penalty": {
+      "sentence": "1 to 10 years",
+      "fine": "Up to 100000"
+    }
+  },
+  {
+    "id": "terroristic-threats",
+    "title": "Terroristic Threats",
+    "statute": "O.C.G.A. § 16-11-37",
+    "type": "Wobbler",
+    "description": "Threatening to commit a crime of violence, release hazardous substance, or burn property.",
+    "variables": [
+      {
+        "id": "type",
+        "label": "Nature of Threat",
+        "type": "select",
+        "options": [
+          {
+            "label": "General Threat",
+            "sentence": "Misdemeanor (Up to 12 months)",
+            "fine": 1000
+          },
+          {
+            "label": "Threat of Death",
+            "sentence": "1 to 5 years (Felony)",
+            "fine": 1000
+          },
+          {
+            "label": "Against Judge/Police",
+            "sentence": "5 to 20 years (Felony)",
+            "fine": "Minimum 50000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gang-act",
+    "title": "Criminal Street Gang Activity",
+    "statute": "O.C.G.A. § 16-15-4",
+    "type": "Felony",
+    "description": "Participation in criminal gang activity or commission of an offense to further gang interests.",
+    "base_penalty": {
+      "sentence": "5 to 20 years (Consecutive)",
+      "fine": "10000 - 15000"
+    }
+  },
+  {
+    "id": "aggravated-assault",
+    "title": "Aggravated Assault",
+    "statute": "O.C.G.A. § 16-5-21",
+    "type": "Felony",
+    "base_penalty": {
+      "sentence": "1 to 20 years",
+      "fine": "Up to 100000"
+    },
+    "variables": [
+      {
+        "id": "victim_status",
+        "label": "Victim / Circumstance",
+        "type": "select",
+        "options": [
+          {
+            "label": "General Public",
+            "sentence": "1 to 20 years"
+          },
+          {
+            "label": "Peace Officer",
+            "sentence": "5 to 20 years (Mandatory min 3-10)"
+          },
+          {
+            "label": "Person 65+",
+            "sentence": "3 to 20 years"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "statutory-rape",
+    "title": "Statutory Rape",
+    "statute": "O.C.G.A. § 16-6-3",
+    "type": "Felony/Misdemeanor",
+    "description": "Sexual intercourse with a person under 16 years of age who is not the defendant's spouse. Romeo & Juliet exception applies if victim is 14-15 and defendant is 18 or younger and within 4 years of victim's age.",
+    "variables": [
+      {
+        "id": "victim_age",
+        "label": "Victim Age & Defendant Status",
+        "type": "select",
+        "options": [
+          {
+            "label": "Victim under 16; Defendant under 21",
+            "sentence": "1 to 20 years",
+            "fine": "Up to 100000",
+            "other": "Sex offender registration required",
+            "severity_level": "Felony"
+          },
+          {
+            "label": "Victim under 16; Defendant 21 or older",
+            "sentence": "10 to 20 years (Mandatory min 10 years)",
+            "fine": "Up to 100000",
+            "other": "Lifetime sex offender registration required",
+            "severity_level": "Felony"
+          },
+          {
+            "label": "Romeo & Juliet Exception (Victim 14-15; Defendant ≤18 and within 4 years)",
+            "sentence": "Up to 12 months",
+            "fine": 1000,
+            "other": "Sex offender registration required (misdemeanor classification)",
+            "severity_level": "Misdemeanor"
+          }
+        ]
+      }
+    ],
+    "notes": "Consent is not a defense to statutory rape if victim is under 16. Age of consent in Georgia is 16. First offender treatment is NOT available for statutory rape convictions.",
+    "recidivist_info": "All statutory rape convictions require sex offender registration under O.C.G.A. § 42-1-12. Defendants 21+ receive mandatory minimums under O.C.G.A. § 17-10-6.2, including at least one year of probation after release. No possibility of sentence reduction or expungement."
+  },
+  {
+    "id": "child-molestation",
+    "title": "Child Molestation",
+    "statute": "O.C.G.A. § 16-6-4",
+    "type": "Felony/Misdemeanor",
+    "description": "Performing immoral or indecent acts to or in the presence of a child under 16 with the intent to arouse or satisfy sexual desires. Includes electronic transmission of indecent material to a child.",
+    "variables": [
+      {
+        "id": "offense_category",
+        "label": "Offense Type",
+        "type": "select",
+        "options": [
+          {
+            "label": "Child Molestation - 1st Offense",
+            "sentence": "5 to 20 years (Mandatory min 5 years)",
+            "fine": "Up to 100000",
+            "other": "Lifetime sex offender registration required; no parole for first 5 years",
+            "severity_level": "Felony"
+          },
+          {
+            "label": "Child Molestation - 2nd or Subsequent Offense",
+            "sentence": "10 to 30 years (Mandatory min 10 years)",
+            "fine": "Up to 100000",
+            "other": "Lifetime sex offender registration required; enhanced supervision",
+            "severity_level": "Felony"
+          },
+          {
+            "label": "Aggravated Child Molestation (physical injury or sodomy)",
+            "sentence": "25 years to Life (Mandatory min 25 years without parole)",
+            "fine": "Up to 100000",
+            "other": "Lifetime sex offender registration required; split sentence possible (25 yrs imprisonment + probation for life)",
+            "severity_level": "Aggravated Felony"
+          },
+          {
+            "label": "Romeo & Juliet Exception (Victim 13-15; Defendant ≤18 and within 4 years; sodomy only)",
+            "sentence": "Up to 12 months",
+            "fine": 1000,
+            "other": "Sex offender registration required",
+            "severity_level": "Misdemeanor"
+          }
+        ]
+      }
+    ],
+    "notes": "First offender treatment is SPECIFICALLY PROHIBITED under Georgia law for child molestation convictions. Electronic monitoring may be required as condition of probation. Aggravated child molestation requires actual physical injury or sodomy.",
+    "recidivist_info": "Mandatory registration as sex offender within 72 hours of release under O.C.G.A. § 42-1-12. Aggravated child molestation carries mandatory 25 years without possibility of parole, probation, or sentence suspension for first 25 years. No reduction possible except in extraordinary cases under appellate review."
+  },
+  {
+    "id": "aggravated-sexual-battery",
+    "title": "Aggravated Sexual Battery",
+    "statute": "O.C.G.A. § 16-6-22.2",
+    "type": "Felony",
+    "description": "Intentionally penetrating the sexual organ or anus of another person with a foreign object (any article or instrument other than the sexual organ) without consent. One of Georgia's most severely punished sex crimes.",
+    "variables": [
+      {
+        "id": "offense_history",
+        "label": "Prior Conviction Status",
+        "type": "select",
+        "options": [
+          {
+            "label": "No Prior Sexual Felony",
+            "sentence": "25 years to Life (Mandatory min 25 years)",
+            "fine": "Up to 100000",
+            "other": "Lifetime sex offender registration required; split sentence possible (25 yrs + probation for life)",
+            "severity_level": "Aggravated Felony"
+          },
+          {
+            "label": "Prior Sexual Felony Conviction",
+            "sentence": "Life or Life with Probation (Mandatory min 25 years)",
+            "fine": "Up to 100000",
+            "other": "Lifetime sex offender registration required; mandatory electronic monitoring as condition of probation",
+            "severity_level": "Recidivist Aggravated Felony"
+          }
+        ]
+      }
+    ],
+    "notes": "Amendments effective May 4, 2023, apply to offenses committed on or after July 1, 2023. 'Foreign object' means any article or instrument other than the sexual organ. Mandatory minimum of 25 years must be served before parole eligibility.",
+    "recidivist_info": "Subject to sentencing provisions under O.C.G.A. § 17-10-6.1 and § 17-10-7. Split sentences allow 25+ years imprisonment followed by lifetime probation. Electronic monitoring required for all probationary periods for repeat offenders. No first offender treatment available. Lifetime sex offender registration under O.C.G.A. § 42-1-12."
+  },
+  {
+    "id": "dui-alcohol",
+    "title": "DUI - Driving Under the Influence",
+    "statute": "O.C.G.A. § 40-6-391",
+    "type": "Misdemeanor/Felony",
+    "description": "Driving while under the influence of alcohol, drugs, or toxic vapors. Criminal lookback is 10 years; license suspension lookback is 5 years.",
+    "variables": [
+      {
+        "id": "offense_count",
+        "label": "Offense History (within 10 years)",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "10 days - 12 mos (24h min)",
+            "fine": "300 - 1000",
+            "other": "License suspension: 12 months (limited permit after 120 days)"
+          },
+          {
+            "label": "2nd Offense",
+            "sentence": "90 days - 12 mos (72h min)",
+            "fine": "600 - 1000",
+            "other": "License suspension: 18 months if within 5 years of prior DUI; 12 months otherwise"
+          },
+          {
+            "label": "3rd Offense",
+            "sentence": "120 days - 12 mos (15 days min)",
+            "fine": "1000 - 5000",
+            "severity_level": "High & Aggravated Misdemeanor",
+            "other": "License revocation: 5 years; Habitual Violator status"
+          },
+          {
+            "label": "4th Offense (Felony)",
+            "sentence": "1 to 5 years (90 days min)",
+            "fine": "1000 - 5000",
+            "severity_level": "Felony",
+            "other": "License revocation: 5 years; Mandatory 90 days confinement; Habitual Violator status"
+          }
+        ]
+      }
+    ],
+    "notes": "Criminal penalties use 10-year lookback (date of arrest to date of arrest). License consequences use 5-year lookback for enhanced suspensions. Only convictions on or after July 1, 2008 count toward felony enhancement.",
+    "recidivist_info": "Fourth DUI within 10 years triggers felony prosecution under O.C.G.A. § 40-6-391(c)(4). All DUI convictions remain on record for life. No first offender treatment available after conviction."
+  },
+  {
+    "id": "armed-robbery",
+    "title": "Armed Robbery",
+    "statute": "O.C.G.A. § 16-8-41",
+    "type": "Felony",
+    "base_penalty": {
+      "sentence": "10 to 20 years, or Life",
+      "mandatory_minimum": 10,
+      "fine": "Up to 100000"
+    }
+  },
+  {
+    "id": "theft-by-taking",
+    "title": "Theft by Taking",
+    "statute": "O.C.G.A. § 16-8-2",
+    "type": "Wobbler",
+    "variables": [
+      {
+        "id": "value",
+        "label": "Value (USD)",
+        "unit": "$",
+        "type": "currency",
+        "ranges": [
+          {
+            "min": 0,
+            "max": 1500,
+            "sentence": "Misdemeanor",
+            "fine": 1000
+          },
+          {
+            "min": 1500.01,
+            "max": 5000,
+            "sentence": "1-5 years (Felony)",
+            "fine": "Up to 100000"
+          },
+          {
+            "min": 5000.01,
+            "max": 24999.99,
+            "sentence": "1-10 years (Felony)",
+            "fine": "Up to 100000"
+          },
+          {
+            "min": 25000,
+            "max": null,
+            "sentence": "2-20 years (Felony)",
+            "fine": "Up to 100000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "burglary-1",
+    "title": "Burglary in the First Degree",
+    "statute": "O.C.G.A. § 16-7-1",
+    "type": "Felony",
+    "base_penalty": {
+      "sentence": "1 to 20 years",
+      "fine": "Up to 100000"
+    }
+  },
+  {
+    "id": "burglary-2",
+    "title": "Burglary in the Second Degree",
+    "statute": "O.C.G.A. § 16-7-1",
+    "type": "Felony",
+    "base_penalty": {
+      "sentence": "1 to 5 years",
+      "fine": "Up to 100000"
+    }
+  },
+  {
+    "id": "psilocybin-possession",
+    "title": "Possession of Psilocybin (Mushrooms)",
+    "statute": "O.C.G.A. § 16-13-30(a)",
+    "type": "Felony",
+    "description": "Possession of any amount of Psilocybin (Schedule I). No specific 'Trafficking' weight tier exists; high volume is prosecuted as Possession with Intent.",
+    "base_penalty": {
+      "sentence": "1 to 15 years",
+      "fine": "Up to 100000"
+    },
+    "notes": "Possession with Intent to Distribute carries 5-30 years (1st Offense) or 10-40 years (2nd Offense)."
+  },
+  {
+    "id": "ftc-theft",
+    "title": "Financial Transaction Card Theft",
+    "statute": "O.C.G.A. § 16-9-31",
+    "type": "Felony",
+    "description": "Taking, obtaining, or withholding a credit/debit card without consent.",
+    "base_penalty": {
+      "sentence": "1 to 3 years",
+      "fine": "Up to 5000"
+    }
+  },
+  {
+    "id": "ftc-fraud",
+    "title": "Financial Transaction Card Fraud",
+    "statute": "O.C.G.A. § 16-9-33",
+    "type": "Wobbler",
+    "description": "Using a card that is forged, expired, revoked, or belongs to another.",
+    "variables": [
+      {
+        "id": "value",
+        "label": "Value of Goods/Services (6 months)",
+        "type": "select",
+        "options": [
+          {
+            "label": "Not exceeding $100",
+            "sentence": "Misdemeanor (Up to 12 months)",
+            "fine": 1000
+          },
+          {
+            "label": "Exceeding $100",
+            "sentence": "1 to 3 years (Felony)",
+            "fine": "Up to 5000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "forgery-1st",
+    "title": "Forgery in the First Degree",
+    "statute": "O.C.G.A. § 16-9-1(b) & § 16-9-2",
+    "type": "Felony",
+    "description": "Knowingly making, altering, or possessing a writing (other than a check) in a fictitious name or in such manner that it purports to have been made by another person, and uttering or delivering such writing with intent to defraud.",
+    "base_penalty": {
+      "sentence": "1 to 15 years",
+      "fine": "Up to 100000"
+    },
+    "notes": "Uttering or delivery is an essential element distinguishing 1st from 2nd degree."
+  },
+  {
+    "id": "forgery-2nd",
+    "title": "Forgery in the Second Degree",
+    "statute": "O.C.G.A. § 16-9-1(c) & § 16-9-2",
+    "type": "Felony",
+    "description": "Knowingly making, altering, or possessing a writing (other than a check) in a fictitious name or in such manner that it purports to have been made by another person, with intent to defraud. Differs from 1st degree in that uttering/delivery is NOT required.",
+    "base_penalty": {
+      "sentence": "1 to 5 years",
+      "fine": "Up to 100000"
+    },
+    "notes": "Possession alone with intent to defraud is sufficient; no need to present or deliver the writing."
+  },
+  {
+    "id": "forgery-3rd",
+    "title": "Forgery in the Third Degree",
+    "statute": "O.C.G.A. § 16-9-1(d) & § 16-9-2",
+    "type": "Felony",
+    "description": "Knowingly making, altering, possessing, or delivering any check for $1,500 or more OR 10 or more checks (regardless of amount) in a fictitious name or manner indicating it was made by another person, with intent to defraud.",
+    "variables": [
+      {
+        "id": "check_category",
+        "label": "Check Offense Type",
+        "type": "select",
+        "options": [
+          {
+            "label": "Single check valued $1,500+",
+            "sentence": "1 to 5 years",
+            "fine": "Up to 100000"
+          },
+          {
+            "label": "10 or more checks (any amount)",
+            "sentence": "1 to 5 years",
+            "fine": "Up to 100000"
+          }
+        ]
+      }
+    ],
+    "notes": "Check-specific forgery for amounts over $1,500 or volume of 10+ checks."
+  },
+  {
+    "id": "forgery-4th",
+    "title": "Forgery in the Fourth Degree",
+    "statute": "O.C.G.A. § 16-9-1(e) & § 16-9-2",
+    "type": "Wobbler",
+    "description": "Knowingly making, altering, possessing, or delivering checks that do not meet 3rd degree thresholds (under $1,500 or fewer than 10 checks), with intent to defraud. Classification depends on offense history.",
+    "variables": [
+      {
+        "id": "offense_history",
+        "label": "Conviction History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "Misdemeanor (Up to 12 months)",
+            "fine": 1000
+          },
+          {
+            "label": "2nd Offense",
+            "sentence": "Misdemeanor (Up to 12 months)",
+            "fine": 1000
+          },
+          {
+            "label": "3rd or Subsequent Offense",
+            "sentence": "1 to 5 years (Felony)",
+            "fine": "Up to 100000"
+          }
+        ]
+      }
+    ],
+    "notes": "First two convictions are misdemeanors; third and subsequent convictions elevate to felony status."
+  }
+]

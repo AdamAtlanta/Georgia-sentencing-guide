@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  background-color: #f8fafc;
+  /* Very light slate, almost white */
+  color: #1e293b;
+  /* Slate-800 */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom KSLAW-inspired Palette */
+:root {
+  --navy-900: #0B1120;
+  /* Deepest Navy */
+  --navy-800: #1a2336;
+  --gold-500: #C5A067;
+  /* Muted Gold/Bronze */
+  --gold-600: #b08d55;
+  --gold-100: #fbf6ec;
+}

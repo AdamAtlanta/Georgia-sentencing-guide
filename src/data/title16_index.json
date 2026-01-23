@@ -1,0 +1,90 @@
+{
+    "title": "Georgia Code Title 16 - Crimes and Offenses",
+    "chapters": [
+        {
+            "id": "1",
+            "name": "General Provisions",
+            "sections": []
+        },
+        {
+            "id": "2",
+            "name": "Criminal Liability",
+            "sections": []
+        },
+        {
+            "id": "3",
+            "name": "Defenses to Criminal Prosecutions",
+            "sections": []
+        },
+        {
+            "id": "4",
+            "name": "Criminal Attempt, Conspiracy, and Solicitation",
+            "sections": []
+        },
+        {
+            "id": "5",
+            "name": "Crimes Against the Person",
+            "sections": []
+        },
+        {
+            "id": "6",
+            "name": "Sexual Offenses",
+            "sections": []
+        },
+        {
+            "id": "7",
+            "name": "Damage to and Intrusion Upon Property",
+            "sections": []
+        },
+        {
+            "id": "8",
+            "name": "Offenses Involving Theft",
+            "sections": []
+        },
+        {
+            "id": "9",
+            "name": "Forgery and Fraudulent Practices",
+            "sections": []
+        },
+        {
+            "id": "10",
+            "name": "Offenses Against Public Administration",
+            "sections": []
+        },
+        {
+            "id": "11",
+            "name": "Offenses Against Public Order and Safety",
+            "sections": []
+        },
+        {
+            "id": "12",
+            "name": "Offenses Against Public Health and Morals",
+            "sections": []
+        },
+        {
+            "id": "13",
+            "name": "Controlled Substances",
+            "sections": []
+        },
+        {
+            "id": "14",
+            "name": "Racketeer Influenced and Corrupt Organizations",
+            "sections": []
+        },
+        {
+            "id": "15",
+            "name": "Street Gang Terrorism and Prevention",
+            "sections": []
+        },
+        {
+            "id": "16",
+            "name": "Forfeiture of Property Used in Burglary, Armed Robbery, or Home Invasion",
+            "sections": []
+        },
+        {
+            "id": "17",
+            "name": "Payday Lending",
+            "sections": []
+        }
+    ]
+}
