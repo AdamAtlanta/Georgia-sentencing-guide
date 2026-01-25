@@ -391,7 +391,9 @@
             "label": "Victim under 16; Defendant 21 or older",
             "sentence": "10 to 20 years (Mandatory min 10 years)",
             "fine": "Up to 100000",
-            "other": "Lifetime sex offender registration required",
+            "must_serve": "10 years",
+            "probation_eligible": false,
+            "other": "Lifetime sex offender registration required; Must serve 10 years before parole eligibility",
             "severity_level": "Felony"
           },
           {
@@ -423,21 +425,27 @@
             "label": "Child Molestation - 1st Offense",
             "sentence": "5 to 20 years (Mandatory min 5 years)",
             "fine": "Up to 100000",
-            "other": "Lifetime sex offender registration required; no parole for first 5 years",
+            "must_serve": "5 years",
+            "probation_eligible": false,
+            "other": "Lifetime sex offender registration required; Must serve 5 years before parole eligibility",
             "severity_level": "Felony"
           },
           {
             "label": "Child Molestation - 2nd or Subsequent Offense",
             "sentence": "10 to 30 years (Mandatory min 10 years)",
             "fine": "Up to 100000",
-            "other": "Lifetime sex offender registration required; enhanced supervision",
+            "must_serve": "10 years",
+            "probation_eligible": false,
+            "other": "Lifetime sex offender registration required; Must serve 10 years before parole eligibility; enhanced supervision",
             "severity_level": "Felony"
           },
           {
             "label": "Aggravated Child Molestation (physical injury or sodomy)",
             "sentence": "25 years to Life (Mandatory min 25 years without parole)",
             "fine": "Up to 100000",
-            "other": "Lifetime sex offender registration required; split sentence possible (25 yrs imprisonment + probation for life)",
+            "must_serve": "25 years",
+            "probation_eligible": false,
+            "other": "Lifetime sex offender registration required; Must serve 25 years with no parole, probation, or suspension; split sentence possible after 25 years (probation for life)",
             "severity_level": "Aggravated Felony"
           },
           {
@@ -469,14 +477,18 @@
             "label": "No Prior Sexual Felony",
             "sentence": "25 years to Life (Mandatory min 25 years)",
             "fine": "Up to 100000",
-            "other": "Lifetime sex offender registration required; split sentence possible (25 yrs + probation for life)",
+            "must_serve": "25 years",
+            "probation_eligible": false,
+            "other": "Lifetime sex offender registration required; Must serve 25 years - cannot be reduced by court or parole; split sentence possible after 25 years (probation for life)",
             "severity_level": "Aggravated Felony"
           },
           {
             "label": "Prior Sexual Felony Conviction",
             "sentence": "Life or Life with Probation (Mandatory min 25 years)",
             "fine": "Up to 100000",
-            "other": "Lifetime sex offender registration required; mandatory electronic monitoring as condition of probation",
+            "must_serve": "25 years",
+            "probation_eligible": false,
+            "other": "Lifetime sex offender registration required; Must serve 25 years minimum; mandatory electronic monitoring as condition of probation",
             "severity_level": "Recidivist Aggravated Felony"
           }
         ]
@@ -501,27 +513,32 @@
             "label": "1st Offense",
             "sentence": "10 days - 12 mos (24h min)",
             "fine": "300 - 1000",
-            "other": "License suspension: 12 months (limited permit after 120 days)"
+            "must_serve": "24 hours",
+            "other": "License suspension: 12 months (limited permit after 120 days); Time served during arrest may count toward 24-hour minimum"
           },
           {
             "label": "2nd Offense",
             "sentence": "90 days - 12 mos (72h min)",
             "fine": "600 - 1000",
-            "other": "License suspension: 18 months if within 5 years of prior DUI; 12 months otherwise"
+            "must_serve": "72 hours",
+            "other": "License suspension: 18 months if within 5 years of prior DUI; 12 months otherwise; All except 72 hours may be suspended"
           },
           {
             "label": "3rd Offense",
             "sentence": "120 days - 12 mos (15 days min)",
             "fine": "1000 - 5000",
+            "must_serve": "15 days",
             "severity_level": "High & Aggravated Misdemeanor",
-            "other": "License revocation: 5 years; Habitual Violator status"
+            "other": "License revocation: 5 years; Habitual Violator status; All except 15 days may be suspended"
           },
           {
             "label": "4th Offense (Felony)",
             "sentence": "1 to 5 years (90 days min)",
             "fine": "1000 - 5000",
+            "must_serve": "1 year",
+            "probation_eligible": false,
             "severity_level": "Felony",
-            "other": "License revocation: 5 years; Mandatory 90 days confinement; Habitual Violator status"
+            "other": "License revocation: 5 years; Must serve 1-year minimum; Cannot be suspended, probated, or reduced; Habitual Violator status"
           }
         ]
       }
@@ -537,8 +554,11 @@
     "base_penalty": {
       "sentence": "10 to 20 years, or Life",
       "mandatory_minimum": 10,
-      "fine": "Up to 100000"
-    }
+      "fine": "Up to 100000",
+      "must_serve": "10 years",
+      "probation_eligible": false
+    },
+    "notes": "Mandatory 10-year minimum must be served in full with no possibility of parole. No portion can be suspended, stayed, probated, deferred, or withheld unless the State agrees to sentence below minimum."
   },
   {
     "id": "theft-by-taking",
@@ -731,5 +751,104 @@
       }
     ],
     "notes": "First two convictions are misdemeanors; third and subsequent convictions elevate to felony status."
+  },
+  {
+    "id": "fleeing-eluding",
+    "title": "Fleeing or Attempting to Elude a Police Officer",
+    "statute": "O.C.G.A. § 40-6-395",
+    "type": "Misdemeanor/Felony",
+    "description": "Willfully failing or refusing to bring a vehicle to a stop or attempting to flee from a pursuing police officer after being given a visual or audible signal to stop. Officer must be in uniform with badge displayed and vehicle must be marked as official police vehicle.",
+    "variables": [
+      {
+        "id": "offense_circumstances",
+        "label": "Offense Type & History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st, 2nd, or 3rd Offense (Basic)",
+            "sentence": "Up to 12 months",
+            "fine": "Up to 5000",
+            "severity_level": "High & Aggravated Misdemeanor"
+          },
+          {
+            "label": "Fleeing with 20+ mph over speed limit",
+            "sentence": "1 to 10 years",
+            "fine": "5000 - 10000",
+            "must_serve": "1 year",
+            "probation_eligible": false,
+            "severity_level": "Felony",
+            "other": "Must serve 1-year minimum - cannot be suspended, probated, deferred, withheld, reduced, or merged with other offenses"
+          },
+          {
+            "label": "Fleeing with collision (vehicle or pedestrian)",
+            "sentence": "1 to 10 years",
+            "fine": "5000 - 10000",
+            "must_serve": "1 year",
+            "probation_eligible": false,
+            "severity_level": "Felony",
+            "other": "Must serve 1-year minimum - cannot be suspended, probated, deferred, withheld, reduced, or merged with other offenses"
+          },
+          {
+            "label": "Fleeing in traffic conditions creating public risk",
+            "sentence": "1 to 10 years",
+            "fine": "5000 - 10000",
+            "must_serve": "1 year",
+            "probation_eligible": false,
+            "severity_level": "Felony",
+            "other": "Must serve 1-year minimum - cannot be suspended, probated, deferred, withheld, reduced, or merged with other offenses"
+          },
+          {
+            "label": "4th or Subsequent Offense (within 10 years)",
+            "sentence": "1 to 10 years",
+            "fine": "5000 - 10000",
+            "must_serve": "1 year",
+            "probation_eligible": false,
+            "severity_level": "Felony",
+            "other": "Must serve 1-year minimum - cannot be suspended, probated, deferred, withheld, reduced, or merged with other offenses"
+          }
+        ]
+      }
+    ],
+    "notes": "First three offenses are high and aggravated misdemeanors unless elevated to felony by dangerous circumstances. Officer must be in uniform with badge and in marked vehicle. Signal to stop must be visual or audible.",
+    "recidivist_info": "Fourth conviction within 10 years is automatic felony. Felony convictions carry mandatory sentences that cannot be suspended, probated, deferred, withheld, reduced to lesser offense, merged with other offenses, or served concurrently."
+  },
+  {
+    "id": "obstruction-officer",
+    "title": "Obstruction of a Law Enforcement Officer",
+    "statute": "O.C.G.A. § 16-10-24",
+    "type": "Misdemeanor/Felony",
+    "description": "Knowingly and willfully obstructing, hindering, or resisting a law enforcement officer in the lawful discharge of their official duties. Felony if violence is used against officer or bodily fluids are thrown at officer.",
+    "variables": [
+      {
+        "id": "obstruction_type",
+        "label": "Type of Obstruction",
+        "type": "select",
+        "options": [
+          {
+            "label": "Basic Obstruction (without violence)",
+            "sentence": "Up to 12 months",
+            "fine": "300 - 1000",
+            "severity_level": "Misdemeanor",
+            "other": "Mandatory minimum $300 fine in addition to any other penalties"
+          },
+          {
+            "label": "Obstruction with Violence to Officer",
+            "sentence": "1 to 5 years",
+            "fine": "Minimum $300 (plus additional penalties)",
+            "severity_level": "Felony",
+            "other": "Mandatory minimum $300 fine; violence includes offering or doing violence to person of officer"
+          },
+          {
+            "label": "Throwing Bodily Fluids at Officer",
+            "sentence": "1 to 5 years",
+            "fine": "Minimum $300 (plus additional penalties)",
+            "severity_level": "Felony",
+            "other": "Mandatory minimum $300 fine; bodily fluids include blood, urine, feces, vomitus, or seminal fluid"
+          }
+        ]
+      }
+    ],
+    "notes": "All convictions require mandatory minimum $300 fine in addition to other penalties. Officer must be acting in lawful discharge of official duties. Felony applies when violence is offered/done to officer OR when bodily fluids are thrown/projected at officer.",
+    "recidivist_info": "No specific recidivist enhancement provisions, but prior convictions may be considered at sentencing. Violence requirement for felony means any physical force or threat of force against the officer's person."
   }
 ]

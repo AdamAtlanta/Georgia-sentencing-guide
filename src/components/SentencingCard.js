@@ -170,6 +170,28 @@ export default function SentencingCard({ crime }) {
                             </div>
                         </div>
 
+                        {/* Mandatory Minimum Warning */}
+                        {calculatedSentence.must_serve && (
+                            <div className="bg-[#FEF3C7] border-l-4 border-[#F59E0B] p-6">
+                                <div className="flex items-start gap-3">
+                                    <AlertTriangle className="w-6 h-6 text-[#F59E0B] flex-shrink-0 mt-0.5" />
+                                    <div>
+                                        <h4 className="font-bold text-[#92400E] uppercase tracking-wider text-sm mb-2">
+                                            Mandatory Minimum - Must Serve
+                                        </h4>
+                                        <p className="text-[#78350F] font-semibold text-lg">
+                                            {calculatedSentence.must_serve} in custody
+                                        </p>
+                                        {calculatedSentence.probation_eligible === false && (
+                                            <p className="text-[#92400E] text-sm mt-2">
+                                                Cannot be suspended, probated, deferred, or withheld
+                                            </p>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+
                         {calculatedSentence.severity_level && (
                             <div className="flex items-center gap-4 text-[#0B1120]">
                                 <Info className="w-5 h-5 text-[#C5A067]" />

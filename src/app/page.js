@@ -26,7 +26,7 @@ export default function Home() {
           <p className="text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
             The authoritative resource for O.C.G.A. criminal penalties.
             <span className="block mt-2 text-[#C5A067] font-serif italic text-lg">
-              Precision. Clarity. Excellence.
+              Investigate. Mitigate. Advocate.
             </span>
           </p>
 
@@ -54,6 +54,7 @@ export default function Home() {
 
       {/* Minimal Footer */}
       <footer className="bg-white border-t border-slate-200 py-8 text-center text-slate-500 text-sm font-light">
+        <p className="mb-2 text-[#0B1120] font-serif font-semibold tracking-wide">Published by Swingle Levin, LLC</p>
         <p>&copy; {new Date().getFullYear()} Georgia Sentencing Guide. For informational purposes only.</p>
       </footer>
     </main>
