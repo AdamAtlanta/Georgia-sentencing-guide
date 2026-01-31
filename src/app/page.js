@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col font-sans">
       {/* Hero Section */}
-      <div className="bg-[#0B1120] text-white pt-20 pb-24 border-b-4 border-[#C5A067]">
-        <div className="max-w-4xl mx-auto px-4 text-center space-y-8">
+      <div className="bg-[#0B1120] text-white pt-12 pb-16 border-b-4 border-[#C5A067]">
+        <div className="max-w-4xl mx-auto px-4 text-center space-y-5">
           <div className="flex justify-center mb-6">
             <div className="p-4 rounded-full bg-[#1a2336] border border-[#C5A067]/30 shadow-2xl">
               <Scale className="w-12 h-12 text-[#C5A067]" />
@@ -30,7 +30,7 @@ export default function Home() {
             </span>
           </p>
 
-          <div className="pt-8">
+          <div className="pt-4">
             <SearchInput onSelect={setSelectedCrime} />
           </div>
         </div>
@@ -41,9 +41,9 @@ export default function Home() {
         {/* Decorative background pattern */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#0B1120_1px,transparent_1px)] [background-size:16px_16px]"></div>
 
-        <div className="max-w-4xl mx-auto px-4 py-8 relative z-10">
+        <div className="max-w-4xl mx-auto px-4 py-4 relative z-10">
           {!selectedCrime && (
-            <div className="text-center py-20 text-slate-400 space-y-4">
+            <div className="text-center py-8 text-slate-400 space-y-4">
               <p className="uppercase tracking-widest text-xs font-semibold text-slate-500">Select an offense to begin</p>
               <div className="w-16 h-px bg-slate-300 mx-auto"></div>
             </div>

@@ -1,5 +1,91 @@
 [
   {
+    "id": "malice-murder",
+    "title": "Murder (Malice Murder)",
+    "statute": "O.C.G.A. § 16-5-1(a)",
+    "type": "Felony",
+    "description": "A person commits the offense of murder when he unlawfully and with malice aforethought, either express or implied, causes the death of another human being. Malice murder is among Georgia's 'Seven Deadly Sins' - the most serious violent felonies.",
+    "variables": [
+      {
+        "id": "sentence_type",
+        "label": "Sentence Imposed",
+        "type": "select",
+        "options": [
+          {
+            "label": "Life Imprisonment (with parole eligibility)",
+            "sentence": "Life Imprisonment",
+            "must_serve": "30 years before parole eligibility",
+            "probation_eligible": false,
+            "other": "Parole eligibility after 30 years for offenses committed on or after July 1, 2006."
+          },
+          {
+            "label": "Life Without Parole",
+            "sentence": "Life Without Parole",
+            "must_serve": "Life - No parole eligibility",
+            "probation_eligible": false
+          },
+          {
+            "label": "Death Penalty (if sought by State)",
+            "sentence": "Death",
+            "must_serve": "N/A - Capital Punishment",
+            "probation_eligible": false,
+            "other": "Requires statutory aggravating circumstances under O.C.G.A. § 17-10-30."
+          }
+        ]
+      }
+    ],
+    "notes": "First Offender treatment is PROHIBITED under O.C.G.A. § 17-10-6.1.",
+    "recidivist_info": "A person convicted of a second serious violent felony shall be sentenced to Life Without Parole under O.C.G.A. § 17-10-7(b)(2)."
+  },
+  {
+    "id": "felony-murder",
+    "title": "Felony Murder",
+    "statute": "O.C.G.A. § 16-5-1(c)",
+    "type": "Felony",
+    "description": "A person commits felony murder when, in the commission of a felony, he or she causes the death of another human being irrespective of malice. The underlying felony merges with the murder conviction.",
+    "variables": [
+      {
+        "id": "sentence_type",
+        "label": "Sentence Imposed",
+        "type": "select",
+        "options": [
+          {
+            "label": "Life Imprisonment (with parole eligibility)",
+            "sentence": "Life Imprisonment",
+            "must_serve": "30 years before parole eligibility",
+            "probation_eligible": false
+          },
+          {
+            "label": "Life Without Parole",
+            "sentence": "Life Without Parole",
+            "must_serve": "Life - No parole eligibility",
+            "probation_eligible": false
+          },
+          {
+            "label": "Death Penalty (if sought by State)",
+            "sentence": "Death",
+            "must_serve": "N/A - Capital Punishment",
+            "probation_eligible": false
+          }
+        ]
+      }
+    ],
+    "notes": "The underlying felony merges with the felony murder conviction. Intent to kill is NOT required - only intent to commit the underlying felony.",
+    "recidivist_info": "Second serious violent felony conviction mandates Life Without Parole."
+  },
+  {
+    "id": "murder-second-degree",
+    "title": "Murder in the Second Degree",
+    "statute": "O.C.G.A. § 16-5-1(d)",
+    "type": "Felony",
+    "description": "A person commits murder in the second degree when, in the commission of cruelty to children in the second degree, he or she causes the death of another human being irrespective of malice.",
+    "base_penalty": {
+      "sentence": "10 to 30 years",
+      "fine": "Up to $100,000"
+    },
+    "notes": "Unlike malice murder or felony murder, second degree murder is NOT a 'Serious Violent Felony' and does not carry the 30-year parole restriction."
+  },
+  {
     "id": "trafficking-fentanyl",
     "title": "Trafficking in Fentanyl",
     "statute": "O.C.G.A. § 16-13-31 (FEAR Act)",

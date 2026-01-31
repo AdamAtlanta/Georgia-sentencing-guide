@@ -56,9 +56,9 @@ export default function SentencingCard({ crime }) {
     if (!crime) return null;
 
     return (
-        <div className="bg-white shadow-xl border-t-4 border-[#C5A067] mt-12 animate-fade-in-up">
+        <div className="bg-white shadow-xl border-t-4 border-[#C5A067] mt-6 animate-fade-in-up">
             {/* Header */}
-            <div className="px-8 py-6 border-b border-slate-100">
+            <div className="px-6 py-4 border-b border-slate-100">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
                     <div className="space-y-2">
                         <h2 className="text-3xl font-serif font-bold text-[#0B1120]">{crime.title}</h2>
@@ -82,7 +82,7 @@ export default function SentencingCard({ crime }) {
                 </div>
             </div>
 
-            <div className="p-8 space-y-10">
+            <div className="p-6 space-y-6">
                 <div className="prose prose-slate max-w-none">
                     <p className="text-slate-700 text-lg leading-loose font-light">
                         {crime.description}
@@ -91,12 +91,12 @@ export default function SentencingCard({ crime }) {
 
                 {/* Variables Inputs */}
                 {crime.variables && crime.variables.length > 0 && (
-                    <div className="bg-slate-50 p-8 border border-slate-200">
+                    <div className="bg-slate-50 p-5 border border-slate-200">
                         <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-2">
                             <Scale className="w-5 h-5 text-[#C5A067]" />
                             <h3 className="font-serif text-xl text-[#0B1120]">Sentencing Factors</h3>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {crime.variables.map(variable => (
                                 <div key={variable.id}>
                                     <label className="block text-sm font-bold text-slate-900 uppercase tracking-wider mb-2">
@@ -135,10 +135,10 @@ export default function SentencingCard({ crime }) {
 
                 {/* Results Section */}
                 {calculatedSentence && (
-                    <div className="space-y-8">
+                    <div className="space-y-5">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border border-slate-200">
                             {/* Sentence Card */}
-                            <div className="p-8 border-b md:border-b-0 md:border-r border-slate-200 bg-[#fbf6ec]">
+                            <div className="p-5 border-b md:border-b-0 md:border-r border-slate-200 bg-[#fbf6ec]">
                                 <h4 className="text-[#C5A067] font-bold text-xs uppercase tracking-widest mb-4">
                                     Confinement
                                 </h4>
@@ -153,7 +153,7 @@ export default function SentencingCard({ crime }) {
                             </div>
 
                             {/* Fine Card */}
-                            <div className="p-8 bg-white">
+                            <div className="p-5 bg-white">
                                 <h4 className="text-[#C5A067] font-bold text-xs uppercase tracking-widest mb-4">
                                     Financial Penalty
                                 </h4>
