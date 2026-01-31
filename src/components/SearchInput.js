@@ -8,8 +8,12 @@ export default function SearchInput({ onSelect }) {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
+    const [hasSelected, setHasSelected] = useState(false);
 
     useEffect(() => {
+        if (hasSelected) {
+            return;
+        }
         if (query.length > 0) {
             const hits = searchCrimes(query);
             setResults(hits);
@@ -18,12 +22,18 @@ export default function SearchInput({ onSelect }) {
             setResults([]);
             setIsOpen(false);
         }
-    }, [query]);
+    }, [query, hasSelected]);
 
     const handleSelect = (crime) => {
+        setHasSelected(true);
         setQuery(crime.title);
         setIsOpen(false);
         onSelect(crime);
+    };
+
+    const handleInputChange = (e) => {
+        setHasSelected(false);
+        setQuery(e.target.value);
     };
 
     return (
@@ -37,7 +47,7 @@ export default function SearchInput({ onSelect }) {
                     className="block w-full pl-12 pr-4 py-5 border-0 rounded-none bg-white text-[#0B1120] placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#C5A067] text-lg shadow-xl"
                     placeholder="Search by crime or O.C.G.A. statute..."
                     value={query}
-                    onChange={(e) => setQuery(e.target.value)}
+                    onChange={handleInputChange}
                 />
             </div>
 
