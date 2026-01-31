@@ -936,5 +936,39 @@
     ],
     "notes": "All convictions require mandatory minimum $300 fine in addition to other penalties. Officer must be acting in lawful discharge of official duties. Felony applies when violence is offered/done to officer OR when bodily fluids are thrown/projected at officer.",
     "recidivist_info": "No specific recidivist enhancement provisions, but prior convictions may be considered at sentencing. Violence requirement for felony means any physical force or threat of force against the officer's person."
+  },
+  {
+    "id": "failure-to-register-sex-offender",
+    "title": "Failure to Register as Sex Offender",
+    "statute": "O.C.G.A. § 42-1-12(n)",
+    "type": "Felony",
+    "description": "Failure to comply with sex offender registration requirements, including failing to register initially within 72 hours, failing to report address changes within 72 hours, or failing to appear in person at the sheriff's office within 72 hours of birthday for annual verification.",
+    "variables": [
+      {
+        "id": "offense_history",
+        "label": "Conviction History",
+        "type": "select",
+        "options": [
+          {
+            "label": "First Offense",
+            "sentence": "1 to 30 years",
+            "fine": "Up to $100,000",
+            "severity_level": "Felony",
+            "other": "Strict liability offense - intent is not required. No judicial discretion below statutory minimum."
+          },
+          {
+            "label": "Second or Subsequent Offense",
+            "sentence": "5 to 30 years (Mandatory min 5 years)",
+            "fine": "Up to $100,000",
+            "must_serve": "5 years",
+            "probation_eligible": false,
+            "severity_level": "Felony",
+            "other": "Mandatory 5-year minimum cannot be suspended, probated, or reduced."
+          }
+        ]
+      }
+    ],
+    "notes": "This is a STRICT LIABILITY offense - the State does not need to prove intent. Missing a deadline by even one day carries the same penalties as deliberate evasion. Common violations include: failing to register within 72 hours of release or moving to Georgia, failing to report address changes within 72 hours, missing annual birthday verification, and failing to report employment or school changes.",
+    "recidivist_info": "Second offense triggers mandatory 5-year minimum with no judicial discretion. Violations of residency/employment restrictions under O.C.G.A. § 42-1-15 carry separate penalties of 10 to 30 years."
   }
 ]
