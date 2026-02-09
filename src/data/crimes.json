@@ -85,7 +85,8 @@
       "sentence": "10 to 30 years",
       "fine": "Up to $100,000"
     },
-    "notes": "Unlike malice murder or felony murder, second degree murder is NOT a 'Serious Violent Felony' and does not carry the 30-year parole restriction."
+    "notes": "Unlike malice murder or felony murder, second degree murder is NOT a 'Serious Violent Felony' and does not carry the 30-year parole restriction.",
+    "parole_info": "Crime Severity Level (CSL) 6. Not a '7 Deadly Sin' offense. Parole eligibility requires serving 65% of the sentence for non-violent classification or 90% if designated BDV (Board-Designated Violent) based on case circumstances."
   },
   {
     "id": "trafficking-fentanyl",
@@ -171,7 +172,8 @@
           }
         ]
       }
-    ]
+    ],
+    "parole_info": "Crime Severity Level (CSL) 3-4 depending on offense history and weight. Requires serving 65% of sentence before parole eligibility. Schedule I/II possession is not a BDV offense."
   },
   {
     "id": "possession-sch-3-4-5",
@@ -203,7 +205,8 @@
         ]
       }
     ],
-    "notes": "Flunitrazepam (Rohypnol) has enhanced penalties (5-30 years)."
+    "notes": "Flunitrazepam (Rohypnol) has enhanced penalties (5-30 years).",
+    "parole_info": "Crime Severity Level (CSL) 1-2 depending on offense history. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "trafficking-cocaine",
@@ -375,7 +378,8 @@
       "sentence": "Up to 12 months",
       "fine": 1000
     },
-    "notes": "Often eligible for pre-trial diversion or city ordinance violations in some jurisdictions."
+    "notes": "Often eligible for pre-trial diversion or city ordinance violations in some jurisdictions.",
+    "parole_info": "Misdemeanor offense - parole does not apply. Sentence served as jail time (up to 12 months). May be eligible for early release programs or time served credits."
   },
   {
     "id": "possession-marijuana-felony",
@@ -386,7 +390,8 @@
     "base_penalty": {
       "sentence": "1 to 10 years",
       "fine": "Up to 100000"
-    }
+    },
+    "parole_info": "Crime Severity Level (CSL) 3. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "terroristic-threats",
@@ -417,7 +422,8 @@
           }
         ]
       }
-    ]
+    ],
+    "parole_info": "Crime Severity Level (CSL) varies: CSL 1 for general threats (misdemeanor), CSL 5 for death threats or threats against judges/police (felony). Felony terroristic threats require serving 65% of sentence before parole eligibility unless designated BDV."
   },
   {
     "id": "gang-act",
@@ -460,7 +466,8 @@
           }
         ]
       }
-    ]
+    ],
+    "parole_info": "Crime Severity Level (CSL) 5. Aggravated Assault is a Board-Designated Violent (BDV) offense requiring 90% of the sentence to be served before parole eligibility."
   },
   {
     "id": "statutory-rape",
@@ -501,7 +508,8 @@
       }
     ],
     "notes": "Consent is not a defense to statutory rape if victim is under 16. Age of consent in Georgia is 16. First offender treatment is NOT available for statutory rape convictions.",
-    "recidivist_info": "All statutory rape convictions require sex offender registration under O.C.G.A. § 42-1-12. Defendants 21+ receive mandatory minimums under O.C.G.A. § 17-10-6.2, including at least one year of probation after release. No possibility of sentence reduction or expungement."
+    "recidivist_info": "All statutory rape convictions require sex offender registration under O.C.G.A. § 42-1-12. Defendants 21+ receive mandatory minimums under O.C.G.A. § 17-10-6.2, including at least one year of probation after release. No possibility of sentence reduction or expungement.",
+    "parole_info": "Crime Severity Level (CSL) varies: CSL 5 for defendant under 21, CSL 8 for defendant 21 or older. Statutory rape with defendant 21+ is a BDV offense requiring 90% of sentence before parole eligibility. Romeo & Juliet misdemeanor: parole does not apply."
   },
   {
     "id": "child-molestation",
@@ -640,7 +648,8 @@
       }
     ],
     "notes": "Criminal penalties use 10-year lookback (date of arrest to date of arrest). License consequences use 5-year lookback for enhanced suspensions. Only convictions on or after July 1, 2008 count toward felony enhancement.",
-    "recidivist_info": "Fourth DUI within 10 years triggers felony prosecution under O.C.G.A. § 40-6-391(c)(4). All DUI convictions remain on record for life. No first offender treatment available after conviction."
+    "recidivist_info": "Fourth DUI within 10 years triggers felony prosecution under O.C.G.A. § 40-6-391(c)(4). All DUI convictions remain on record for life. No first offender treatment available after conviction.",
+    "parole_info": "1st-3rd offense DUI (misdemeanor): Parole does not apply; sentence served as jail time. 4th offense DUI (felony): Crime Severity Level (CSL) 1. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "armed-robbery",
@@ -695,7 +704,8 @@
           }
         ]
       }
-    ]
+    ],
+    "parole_info": "Crime Severity Level (CSL) varies by value: CSL 1 (misdemeanor, under $1,500), CSL 2 ($1,500-$5,000), CSL 3 ($5,000-$25,000), CSL 4 ($25,000+). Felony theft requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "burglary-1",
@@ -705,7 +715,8 @@
     "base_penalty": {
       "sentence": "1 to 20 years",
       "fine": "Up to 100000"
-    }
+    },
+    "parole_info": "Crime Severity Level (CSL) 5. Burglary in the First Degree (residential burglary) is a Board-Designated Violent (BDV) offense requiring 90% of the sentence to be served before parole eligibility."
   },
   {
     "id": "burglary-2",
@@ -715,7 +726,8 @@
     "base_penalty": {
       "sentence": "1 to 5 years",
       "fine": "Up to 100000"
-    }
+    },
+    "parole_info": "Crime Severity Level (CSL) 3. Burglary in the Second Degree (non-residential) requires serving 65% of the sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "psilocybin-possession",
@@ -727,7 +739,8 @@
       "sentence": "1 to 15 years",
       "fine": "Up to 100000"
     },
-    "notes": "Possession with Intent to Distribute carries 5-30 years (1st Offense) or 10-40 years (2nd Offense)."
+    "notes": "Possession with Intent to Distribute carries 5-30 years (1st Offense) or 10-40 years (2nd Offense).",
+    "parole_info": "Crime Severity Level (CSL) 3-4 depending on amount and offense history. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "ftc-theft",
@@ -738,7 +751,8 @@
     "base_penalty": {
       "sentence": "1 to 3 years",
       "fine": "Up to 5000"
-    }
+    },
+    "parole_info": "Crime Severity Level (CSL) 2. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "ftc-fraud",
@@ -764,7 +778,8 @@
           }
         ]
       }
-    ]
+    ],
+    "parole_info": "Crime Severity Level (CSL) varies: CSL 1 for amounts not exceeding $100 (misdemeanor), CSL 2 for amounts exceeding $100 (felony). Felony requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "forgery-1st",
@@ -776,7 +791,8 @@
       "sentence": "1 to 15 years",
       "fine": "Up to 100000"
     },
-    "notes": "Uttering or delivery is an essential element distinguishing 1st from 2nd degree."
+    "notes": "Uttering or delivery is an essential element distinguishing 1st from 2nd degree.",
+    "parole_info": "Crime Severity Level (CSL) 3. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "forgery-2nd",
@@ -788,7 +804,8 @@
       "sentence": "1 to 5 years",
       "fine": "Up to 100000"
     },
-    "notes": "Possession alone with intent to defraud is sufficient; no need to present or deliver the writing."
+    "notes": "Possession alone with intent to defraud is sufficient; no need to present or deliver the writing.",
+    "parole_info": "Crime Severity Level (CSL) 2. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "forgery-3rd",
@@ -815,7 +832,8 @@
         ]
       }
     ],
-    "notes": "Check-specific forgery for amounts over $1,500 or volume of 10+ checks."
+    "notes": "Check-specific forgery for amounts over $1,500 or volume of 10+ checks.",
+    "parole_info": "Crime Severity Level (CSL) 2. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "forgery-4th",
@@ -847,7 +865,8 @@
         ]
       }
     ],
-    "notes": "First two convictions are misdemeanors; third and subsequent convictions elevate to felony status."
+    "notes": "First two convictions are misdemeanors; third and subsequent convictions elevate to felony status.",
+    "parole_info": "Crime Severity Level (CSL) varies: CSL 1 for 1st and 2nd offense (misdemeanor), CSL 2 for 3rd or subsequent offense (felony). Felony requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "fleeing-eluding",
@@ -907,7 +926,8 @@
       }
     ],
     "notes": "First three offenses are high and aggravated misdemeanors unless elevated to felony by dangerous circumstances. Officer must be in uniform with badge and in marked vehicle. Signal to stop must be visual or audible.",
-    "recidivist_info": "Fourth conviction within 10 years is automatic felony. Felony convictions carry mandatory sentences that cannot be suspended, probated, deferred, withheld, reduced to lesser offense, merged with other offenses, or served concurrently."
+    "recidivist_info": "Fourth conviction within 10 years is automatic felony. Felony convictions carry mandatory sentences that cannot be suspended, probated, deferred, withheld, reduced to lesser offense, merged with other offenses, or served concurrently.",
+    "parole_info": "Crime Severity Level (CSL) 3 for felony fleeing/eluding. Misdemeanor offenses: parole does not apply. Felony requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "obstruction-officer",
@@ -946,7 +966,8 @@
       }
     ],
     "notes": "All convictions require mandatory minimum $300 fine in addition to other penalties. Officer must be acting in lawful discharge of official duties. Felony applies when violence is offered/done to officer OR when bodily fluids are thrown/projected at officer.",
-    "recidivist_info": "No specific recidivist enhancement provisions, but prior convictions may be considered at sentencing. Violence requirement for felony means any physical force or threat of force against the officer's person."
+    "recidivist_info": "No specific recidivist enhancement provisions, but prior convictions may be considered at sentencing. Violence requirement for felony means any physical force or threat of force against the officer's person.",
+    "parole_info": "Crime Severity Level (CSL) varies: CSL 1 for basic obstruction (misdemeanor), CSL 3 for felony obstruction with violence. Misdemeanor: parole does not apply. Felony requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "failure-to-register-sex-offender",
@@ -980,7 +1001,8 @@
       }
     ],
     "notes": "This is a STRICT LIABILITY offense - the State does not need to prove intent. Missing a deadline by even one day carries the same penalties as deliberate evasion. Common violations include: failing to register within 72 hours of release or moving to Georgia, failing to report address changes within 72 hours, missing annual birthday verification, and failing to report employment or school changes.",
-    "recidivist_info": "Second offense triggers mandatory 5-year minimum with no judicial discretion. Violations of residency/employment restrictions under O.C.G.A. § 42-1-15 carry separate penalties of 10 to 30 years."
+    "recidivist_info": "Second offense triggers mandatory 5-year minimum with no judicial discretion. Violations of residency/employment restrictions under O.C.G.A. § 42-1-15 carry separate penalties of 10 to 30 years.",
+    "parole_info": "Crime Severity Level (CSL) varies: CSL 5 for first offense, CSL 7 for second or subsequent offense. Requires serving 65% of sentence before parole eligibility. Not a BDV offense, but strict mandatory minimums apply."
   },
   {
     "id": "possession-tools-crime",
@@ -992,7 +1014,8 @@
       "sentence": "1 to 5 years",
       "fine": "Up to $100,000"
     },
-    "notes": "Both possession AND intent to use the tools to commit a crime must be proven. Possessing tools that could be used in committing a crime is not in itself a crime - intent is required. The tool must be one commonly used for the commission of the specific crime alleged."
+    "notes": "Both possession AND intent to use the tools to commit a crime must be proven. Possessing tools that could be used in committing a crime is not in itself a crime - intent is required. The tool must be one commonly used for the commission of the specific crime alleged.",
+    "parole_info": "Crime Severity Level (CSL) 2. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "theft-by-receiving",
@@ -1034,7 +1057,8 @@
         ]
       }
     ],
-    "notes": "'Receiving' means acquiring possession or control or lending on the security of the property. In any prosecution, it is not necessary to show a conviction of the principal thief. Knowledge that property was stolen can be actual or constructive ('should have known')."
+    "notes": "'Receiving' means acquiring possession or control or lending on the security of the property. In any prosecution, it is not necessary to show a conviction of the principal thief. Knowledge that property was stolen can be actual or constructive ('should have known').",
+    "parole_info": "Crime Severity Level (CSL) varies by value: CSL 1 (misdemeanor, under $1,500), CSL 2 ($1,500-$5,000), CSL 3 ($5,000-$25,000), CSL 4 ($25,000+). Felony theft by receiving requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   },
   {
     "id": "stalking",
@@ -1063,7 +1087,8 @@
         ]
       }
     ],
-    "notes": "Before sentencing, the judge may require psychological evaluation of the offender and shall consider the entire criminal record. The judge may issue a permanent restraining order and may require psychological treatment as part of the sentence or as a condition of probation."
+    "notes": "Before sentencing, the judge may require psychological evaluation of the offender and shall consider the entire criminal record. The judge may issue a permanent restraining order and may require psychological treatment as part of the sentence or as a condition of probation.",
+    "parole_info": "Crime Severity Level (CSL) varies: CSL 1 for first offense (misdemeanor), CSL 5 for second or subsequent offense (felony). Felony stalking is a Board-Designated Violent (BDV) offense requiring 90% of sentence before parole eligibility."
   },
   {
     "id": "aggravated-stalking",
@@ -1075,6 +1100,7 @@
       "sentence": "1 to 10 years",
       "fine": "Up to $10,000"
     },
-    "notes": "Aggravated stalking requires violation of an existing court order (such as a temporary protective order, permanent protective order, preliminary injunction, bond to keep the peace, or conditions of probation/parole) in addition to the stalking conduct. The judge may require psychological evaluation and treatment, and may issue a permanent restraining order at sentencing."
+    "notes": "Aggravated stalking requires violation of an existing court order (such as a temporary protective order, permanent protective order, preliminary injunction, bond to keep the peace, or conditions of probation/parole) in addition to the stalking conduct. The judge may require psychological evaluation and treatment, and may issue a permanent restraining order at sentencing.",
+    "parole_info": "Crime Severity Level (CSL) 5. Aggravated Stalking is a Board-Designated Violent (BDV) offense requiring 90% of the sentence to be served before parole eligibility."
   }
 ]
