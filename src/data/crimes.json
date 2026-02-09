@@ -35,7 +35,8 @@
       }
     ],
     "notes": "First Offender treatment is PROHIBITED under O.C.G.A. § 17-10-6.1.",
-    "recidivist_info": "A person convicted of a second serious violent felony shall be sentenced to Life Without Parole under O.C.G.A. § 17-10-7(b)(2)."
+    "recidivist_info": "A person convicted of a second serious violent felony shall be sentenced to Life Without Parole under O.C.G.A. § 17-10-7(b)(2).",
+    "parole_info": "As a '7 Deadly Sin' offense, murder is generally not parole-eligible by statute except for life sentences (parole eligibility after 30 years). Conspiracy or attempt to commit murder is CSL 8; however, the associated percentage (65/75/90%) only applies to the CSL 8 portion of the sentence."
   },
   {
     "id": "felony-murder",
@@ -71,7 +72,8 @@
       }
     ],
     "notes": "The underlying felony merges with the felony murder conviction. Intent to kill is NOT required - only intent to commit the underlying felony.",
-    "recidivist_info": "Second serious violent felony conviction mandates Life Without Parole."
+    "recidivist_info": "Second serious violent felony conviction mandates Life Without Parole.",
+    "parole_info": "As a '7 Deadly Sin' offense, felony murder is generally not parole-eligible by statute except for life sentences (parole eligibility after 30 years). Conspiracy or attempt to commit felony murder is CSL 8; however, the associated percentage (65/75/90%) only applies to the CSL 8 portion of the sentence."
   },
   {
     "id": "murder-second-degree",
@@ -123,7 +125,8 @@
       }
     ],
     "notes": "Sentencing under 2024 FEAR Act. Extremely strict liability.",
-    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence if defendant provides substantial help to police. (2) Judicial Safety Valve - Judge may depart from mandatory min if: No weapon, no death/injury, no prior felony drug conviction, not a leader, and interests of justice served."
+    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence if defendant provides substantial help to police. (2) Judicial Safety Valve - Judge may depart from mandatory min if: No weapon, no death/injury, no prior felony drug conviction, not a leader, and interests of justice served.",
+    "parole_info": "For tier 3 (Level 3) trafficking reduced to Possession with Intent to Distribute (PWID) via plea, the Crime Severity Level (CSL) is often determined by the original drug weight found in the lab report unless the weight itself is also explicitly reduced in the plea agreement."
   },
   {
     "id": "possession-sch-1-2",
@@ -239,7 +242,8 @@
         ]
       }
     ],
-    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence for help. (2) Judicial Safety Valve - Departure allowed if: No weapon, no death/injury, no prior felony drug conviction, not a leader."
+    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence for help. (2) Judicial Safety Valve - Departure allowed if: No weapon, no death/injury, no prior felony drug conviction, not a leader.",
+    "parole_info": "For tier 3 (Level 3) trafficking reduced to Possession with Intent to Distribute (PWID) via plea, the Crime Severity Level (CSL) is often determined by the original drug weight found in the lab report unless the weight itself is also explicitly reduced in the plea agreement."
   },
   {
     "id": "trafficking-meth",
@@ -278,7 +282,8 @@
         ]
       }
     ],
-    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence for help. (2) Judicial Safety Valve - Departure allowed if: No weapon, no death/injury, no prior felony drug conviction, not a leader."
+    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence for help. (2) Judicial Safety Valve - Departure allowed if: No weapon, no death/injury, no prior felony drug conviction, not a leader.",
+    "parole_info": "For tier 3 (Level 3) trafficking reduced to Possession with Intent to Distribute (PWID) via plea, the Crime Severity Level (CSL) is often determined by the original drug weight found in the lab report unless the weight itself is also explicitly reduced in the plea agreement."
   },
   {
     "id": "trafficking-heroin",
@@ -317,7 +322,8 @@
         ]
       }
     ],
-    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence for help. (2) Judicial Safety Valve - Departure allowed if: No weapon, no death/injury, no prior felony drug conviction, not a leader."
+    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence for help. (2) Judicial Safety Valve - Departure allowed if: No weapon, no death/injury, no prior felony drug conviction, not a leader.",
+    "parole_info": "For tier 3 (Level 3) trafficking reduced to Possession with Intent to Distribute (PWID) via plea, the Crime Severity Level (CSL) is often determined by the original drug weight found in the lab report unless the weight itself is also explicitly reduced in the plea agreement."
   },
   {
     "id": "trafficking-marijuana",
@@ -356,7 +362,8 @@
         ]
       }
     ],
-    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence for help. (2) Judicial Safety Valve - Departure allowed if: No weapon, no death/injury, no prior felony drug conviction, not a leader."
+    "recidivist_info": "Mandatory Minimums apply. DEVIATIONS: (1) Substantial Assistance (O.C.G.A. § 16-13-31(g)(2)) - Judge may reduce sentence for help. (2) Judicial Safety Valve - Departure allowed if: No weapon, no death/injury, no prior felony drug conviction, not a leader.",
+    "parole_info": "For tier 3 (Level 3) trafficking reduced to Possession with Intent to Distribute (PWID) via plea, the Crime Severity Level (CSL) is often determined by the original drug weight found in the lab report unless the weight itself is also explicitly reduced in the plea agreement."
   },
   {
     "id": "possession-marijuana-misd",
@@ -421,7 +428,8 @@
     "base_penalty": {
       "sentence": "5 to 20 years (Consecutive)",
       "fine": "10000 - 15000"
-    }
+    },
+    "parole_info": "Crime Severity Level (CSL) for gang charges is 5 for offenses committed prior to July 1, 2023, and CSL 8 for offenses committed on or after July 1, 2023."
   },
   {
     "id": "aggravated-assault",
@@ -545,7 +553,8 @@
       }
     ],
     "notes": "First offender treatment is SPECIFICALLY PROHIBITED under Georgia law for child molestation convictions. Electronic monitoring may be required as condition of probation. Aggravated child molestation requires actual physical injury or sodomy.",
-    "recidivist_info": "Mandatory registration as sex offender within 72 hours of release under O.C.G.A. § 42-1-12. Aggravated child molestation carries mandatory 25 years without possibility of parole, probation, or sentence suspension for first 25 years. No reduction possible except in extraordinary cases under appellate review."
+    "recidivist_info": "Mandatory registration as sex offender within 72 hours of release under O.C.G.A. § 42-1-12. Aggravated child molestation carries mandatory 25 years without possibility of parole, probation, or sentence suspension for first 25 years. No reduction possible except in extraordinary cases under appellate review.",
+    "parole_info": "AGGRAVATED Child Molestation is a '7 Deadly Sin' offense and is generally not parole-eligible by statute except for life sentences. Conspiracy or attempt to commit aggravated child molestation is CSL 8; however, the associated percentage (65/75/90%) only applies to the CSL 8 portion of the sentence."
   },
   {
     "id": "aggravated-sexual-battery",
@@ -581,7 +590,8 @@
       }
     ],
     "notes": "Amendments effective May 4, 2023, apply to offenses committed on or after July 1, 2023. 'Foreign object' means any article or instrument other than the sexual organ. Mandatory minimum of 25 years must be served before parole eligibility.",
-    "recidivist_info": "Subject to sentencing provisions under O.C.G.A. § 17-10-6.1 and § 17-10-7. Split sentences allow 25+ years imprisonment followed by lifetime probation. Electronic monitoring required for all probationary periods for repeat offenders. No first offender treatment available. Lifetime sex offender registration under O.C.G.A. § 42-1-12."
+    "recidivist_info": "Subject to sentencing provisions under O.C.G.A. § 17-10-6.1 and § 17-10-7. Split sentences allow 25+ years imprisonment followed by lifetime probation. Electronic monitoring required for all probationary periods for repeat offenders. No first offender treatment available. Lifetime sex offender registration under O.C.G.A. § 42-1-12.",
+    "parole_info": "As a '7 Deadly Sin' offense, aggravated sexual battery is generally not parole-eligible by statute except for life sentences. Conspiracy or attempt to commit aggravated sexual battery is CSL 8; however, the associated percentage (65/75/90%) only applies to the CSL 8 portion of the sentence."
   },
   {
     "id": "dui-alcohol",
@@ -644,7 +654,8 @@
       "must_serve": "10 years",
       "probation_eligible": false
     },
-    "notes": "Mandatory 10-year minimum must be served in full with no possibility of parole. No portion can be suspended, stayed, probated, deferred, or withheld unless the State agrees to sentence below minimum."
+    "notes": "Mandatory 10-year minimum must be served in full with no possibility of parole. No portion can be suspended, stayed, probated, deferred, or withheld unless the State agrees to sentence below minimum.",
+    "parole_info": "As a '7 Deadly Sin' offense, armed robbery is generally not parole-eligible by statute except for life sentences. Conspiracy or attempt to commit armed robbery is CSL 8; however, the associated percentage (65/75/90%) only applies to the CSL 8 portion of the sentence."
   },
   {
     "id": "theft-by-taking",
