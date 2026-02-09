@@ -970,5 +970,100 @@
     ],
     "notes": "This is a STRICT LIABILITY offense - the State does not need to prove intent. Missing a deadline by even one day carries the same penalties as deliberate evasion. Common violations include: failing to register within 72 hours of release or moving to Georgia, failing to report address changes within 72 hours, missing annual birthday verification, and failing to report employment or school changes.",
     "recidivist_info": "Second offense triggers mandatory 5-year minimum with no judicial discretion. Violations of residency/employment restrictions under O.C.G.A. § 42-1-15 carry separate penalties of 10 to 30 years."
+  },
+  {
+    "id": "possession-tools-crime",
+    "title": "Possession of Tools for Commission of Crime",
+    "statute": "O.C.G.A. § 16-7-20",
+    "type": "Felony",
+    "description": "A person commits this offense when they have in their possession any tool, explosive, or other device commonly used in the commission of burglary, theft, or other crime with the intent to make use thereof in the commission of a crime.",
+    "base_penalty": {
+      "sentence": "1 to 5 years",
+      "fine": "Up to $100,000"
+    },
+    "notes": "Both possession AND intent to use the tools to commit a crime must be proven. Possessing tools that could be used in committing a crime is not in itself a crime - intent is required. The tool must be one commonly used for the commission of the specific crime alleged."
+  },
+  {
+    "id": "theft-by-receiving",
+    "title": "Theft by Receiving Stolen Property",
+    "statute": "O.C.G.A. § 16-8-7",
+    "type": "Wobbler",
+    "description": "A person commits this offense when they receive, dispose of, or retain stolen property which they know or should know was stolen, unless the property is received, disposed of, or retained with intent to restore it to the owner.",
+    "variables": [
+      {
+        "id": "value",
+        "label": "Value of Property (USD)",
+        "unit": "$",
+        "type": "currency",
+        "ranges": [
+          {
+            "min": 0,
+            "max": 1500,
+            "sentence": "Misdemeanor (Up to 12 months)",
+            "fine": 1000
+          },
+          {
+            "min": 1500.01,
+            "max": 5000,
+            "sentence": "1-5 years (Felony)",
+            "fine": "Up to 100000"
+          },
+          {
+            "min": 5000.01,
+            "max": 24999.99,
+            "sentence": "1-10 years (Felony)",
+            "fine": "Up to 100000"
+          },
+          {
+            "min": 25000,
+            "max": null,
+            "sentence": "2-20 years (Felony)",
+            "fine": "Up to 100000"
+          }
+        ]
+      }
+    ],
+    "notes": "'Receiving' means acquiring possession or control or lending on the security of the property. In any prosecution, it is not necessary to show a conviction of the principal thief. Knowledge that property was stolen can be actual or constructive ('should have known')."
+  },
+  {
+    "id": "stalking",
+    "title": "Stalking",
+    "statute": "O.C.G.A. § 16-5-90",
+    "type": "Misdemeanor/Felony",
+    "description": "A person commits stalking when they follow, place under surveillance, or contact another person at or about a place or places without consent for the purpose of harassing and intimidating that person.",
+    "variables": [
+      {
+        "id": "offense_history",
+        "label": "Conviction History",
+        "type": "select",
+        "options": [
+          {
+            "label": "First Offense",
+            "sentence": "Up to 12 months",
+            "fine": 1000,
+            "severity_level": "Misdemeanor"
+          },
+          {
+            "label": "Second or Subsequent Offense",
+            "sentence": "1 to 10 years",
+            "fine": "Up to $10,000",
+            "severity_level": "Felony"
+          }
+        ]
+      }
+    ],
+    "notes": "Before sentencing, the judge may require psychological evaluation of the offender and shall consider the entire criminal record. The judge may issue a permanent restraining order and may require psychological treatment as part of the sentence or as a condition of probation."
+  },
+  {
+    "id": "aggravated-stalking",
+    "title": "Aggravated Stalking",
+    "statute": "O.C.G.A. § 16-5-91",
+    "type": "Felony",
+    "description": "A person commits aggravated stalking when they violate a protective order, bond, injunction, or condition of pretrial release/probation/parole prohibiting such behavior, and follows, places under surveillance, or contacts another person without consent for the purpose of harassing and intimidating that person.",
+    "base_penalty": {
+      "sentence": "1 to 10 years",
+      "fine": "Up to $10,000"
+    },
+    "notes": "Aggravated stalking requires violation of an existing court order (such as a temporary protective order, permanent protective order, preliminary injunction, bond to keep the peace, or conditions of probation/parole) in addition to the stalking conduct. The judge may require psychological evaluation and treatment, and may issue a permanent restraining order at sentencing."
   }
 ]
