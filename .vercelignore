@@ -1,0 +1,7 @@
+.claude/
+.codex/
+research/
+*.pdf
+SENTENCING_AUDIT_*.md
+MANDATORY_MINIMUMS_*.md
+PROJECT_STATUS.md

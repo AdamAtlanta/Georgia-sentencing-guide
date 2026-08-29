@@ -24,7 +24,7 @@ export default function Home() {
           </h1>
 
           <p className="text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
-            The authoritative resource for O.C.G.A. criminal penalties.
+            A plain-language reference for Georgia criminal penalties and parole guidelines.
             <span className="block mt-2 text-[#C5A067] font-serif italic text-lg">
               Investigate. Mitigate. Advocate.
             </span>
@@ -48,14 +48,14 @@ export default function Home() {
               <div className="w-16 h-px bg-slate-300 mx-auto"></div>
             </div>
           )}
-          <SentencingCard crime={selectedCrime} />
+          <SentencingCard key={selectedCrime?.id || 'none'} crime={selectedCrime} />
         </div>
       </div>
 
       {/* Minimal Footer */}
       <footer className="bg-white border-t border-slate-200 py-8 text-center text-slate-500 text-sm font-light">
         <p className="mb-2 text-[#0B1120] font-serif font-semibold tracking-wide">Published by Swingle Levin, LLC</p>
-        <p>&copy; {new Date().getFullYear()} Georgia Sentencing Guide. For informational purposes only.</p>
+        <p>&copy; {new Date().getFullYear()} Georgia Sentencing Guide. Informational only—not legal advice. Verify current law for every case.</p>
       </footer>
     </main>
   );

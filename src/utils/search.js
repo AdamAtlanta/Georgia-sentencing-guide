@@ -1,5 +1,5 @@
 import Fuse from 'fuse.js';
-import crimes from '@/data/crimes.json';
+import crimes from '@/data/catalog';
 
 const options = {
     keys: [
@@ -8,15 +8,15 @@ const options = {
         { name: 'id', weight: 0.3 },
         { name: 'description', weight: 0.2 },
     ],
-    threshold: 0.3, // Lower = more strict
+    threshold: 0.3,
     includeScore: true,
 };
 
 const fuse = new Fuse(crimes, options);
 
 export function searchCrimes(query) {
-    if (!query) {
-        return [];
-    }
-    return fuse.search(query).map(result => result.item);
+    if (!query) return [];
+    return fuse.search(query).map((result) => result.item);
 }
+
+export { crimes };

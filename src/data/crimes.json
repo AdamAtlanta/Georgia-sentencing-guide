@@ -369,6 +369,13 @@
     "parole_info": "For tier 3 (Level 3) trafficking reduced to Possession with Intent to Distribute (PWID) via plea, the Crime Severity Level (CSL) is often determined by the original drug weight found in the lab report unless the weight itself is also explicitly reduced in the plea agreement."
   },
   {
+    "id": "trafficking-mdma",
+    "title": "Trafficking in MDMA/MDA (Ecstasy/Molly)",
+    "statute": "O.C.G.A. § 16-13-31.1",
+    "type": "Felony",
+    "description": "A person who sells, delivers, brings into this state, or has possession of 28 grams or more of 3,4-methylenedioxyamphetamine (MDA) or 3,4-methylenedioxymethamphetamine (MDMA), or any mixture containing either substance, commits the felony offense of trafficking in ecstasy. Mandatory minimum sentences and fines increase with weight."
+  },
+  {
     "id": "possession-marijuana-misd",
     "title": "Possession of Marijuana (Less than 1 oz)",
     "statute": "O.C.G.A. § 16-13-2(b)",
@@ -1102,5 +1109,820 @@
     },
     "notes": "Aggravated stalking requires violation of an existing court order (such as a temporary protective order, permanent protective order, preliminary injunction, bond to keep the peace, or conditions of probation/parole) in addition to the stalking conduct. The judge may require psychological evaluation and treatment, and may issue a permanent restraining order at sentencing.",
     "parole_info": "Crime Severity Level (CSL) 5. Aggravated Stalking is a Board-Designated Violent (BDV) offense requiring 90% of the sentence to be served before parole eligibility."
+  },
+  {
+    "id": "possession-cocaine",
+    "title": "Possession of Cocaine",
+    "statute": "O.C.G.A. § 16-13-30(a)",
+    "type": "Felony",
+    "description": "Unlawful possession of cocaine (Schedule II Narcotic) in any amount less than 28 grams. Possession of 28 grams or more triggers trafficking charges under O.C.G.A. § 16-13-31 with mandatory minimum sentences.",
+    "variables": [
+      {
+        "id": "offense_count",
+        "label": "Offense History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "2 to 15 years",
+            "fine": "Up to 100000"
+          },
+          {
+            "label": "2nd or Subsequent",
+            "sentence": "5 to 30 years",
+            "fine": "Up to 100000"
+          }
+        ]
+      }
+    ],
+    "notes": "Trafficking threshold: 28 grams. Possession of 28g+ triggers mandatory minimums under O.C.G.A. § 16-13-31. Conditional discharge under O.C.G.A. § 16-13-2(a) may be available for eligible first offenders (probation without adjudication of guilt). Drug Court under O.C.G.A. § 15-1-15 may also be available.",
+    "parole_info": "Crime Severity Level (CSL) 3-4 depending on offense history and amount. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
+  },
+  {
+    "id": "possession-methamphetamine",
+    "title": "Possession of Methamphetamine",
+    "statute": "O.C.G.A. § 16-13-30(a)",
+    "type": "Felony",
+    "description": "Unlawful possession of methamphetamine (Schedule II) in any amount less than 28 grams. Possession of 28 grams or more triggers trafficking charges under O.C.G.A. § 16-13-31(e) with mandatory minimum sentences.",
+    "variables": [
+      {
+        "id": "offense_count",
+        "label": "Offense History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "2 to 15 years",
+            "fine": "Up to 100000"
+          },
+          {
+            "label": "2nd or Subsequent",
+            "sentence": "5 to 30 years",
+            "fine": "Up to 100000"
+          }
+        ]
+      }
+    ],
+    "notes": "Trafficking threshold: 28 grams. Possession of 28g+ triggers mandatory minimums under O.C.G.A. § 16-13-31(e). Conditional discharge under O.C.G.A. § 16-13-2(a) may be available for eligible first offenders. Drug Court under O.C.G.A. § 15-1-15 may also be available.",
+    "parole_info": "Crime Severity Level (CSL) 3-4 depending on offense history and amount. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
+  },
+  {
+    "id": "possession-fentanyl",
+    "title": "Possession of Fentanyl",
+    "statute": "O.C.G.A. § 16-13-30(a)",
+    "type": "Felony",
+    "description": "Unlawful possession of fentanyl (Schedule II Narcotic) in any amount less than 4 grams. Possession of 4 grams or more triggers trafficking charges under O.C.G.A. § 16-13-31 (FEAR Act) with severe mandatory minimum sentences.",
+    "variables": [
+      {
+        "id": "offense_count",
+        "label": "Offense History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "2 to 15 years",
+            "fine": "Up to 100000"
+          },
+          {
+            "label": "2nd or Subsequent",
+            "sentence": "5 to 30 years",
+            "fine": "Up to 100000"
+          }
+        ]
+      }
+    ],
+    "notes": "Trafficking threshold: 4 grams (FEAR Act) - one of the lowest trafficking thresholds in Georgia. Possession of 4g+ triggers mandatory minimums starting at 10 years. Conditional discharge under O.C.G.A. § 16-13-2(a) may be available for eligible first offenders. Drug Court under O.C.G.A. § 15-1-15 may also be available.",
+    "parole_info": "Crime Severity Level (CSL) 3-4 depending on offense history and amount. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
+  },
+  {
+    "id": "possession-heroin",
+    "title": "Possession of Heroin",
+    "statute": "O.C.G.A. § 16-13-30(a)",
+    "type": "Felony",
+    "description": "Unlawful possession of heroin (Schedule I) in any amount less than 4 grams. Possession of 4 grams or more triggers trafficking charges under O.C.G.A. § 16-13-31(b) with mandatory minimum sentences.",
+    "variables": [
+      {
+        "id": "offense_count",
+        "label": "Offense History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "2 to 15 years",
+            "fine": "Up to 100000"
+          },
+          {
+            "label": "2nd or Subsequent",
+            "sentence": "5 to 30 years",
+            "fine": "Up to 100000"
+          }
+        ]
+      }
+    ],
+    "notes": "Trafficking threshold: 4 grams. Possession of 4g+ triggers mandatory minimums under O.C.G.A. § 16-13-31(b). Conditional discharge under O.C.G.A. § 16-13-2(a) may be available for eligible first offenders. Drug Court under O.C.G.A. § 15-1-15 may also be available.",
+    "parole_info": "Crime Severity Level (CSL) 3-4 depending on offense history and amount. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
+  },
+  {
+    "id": "possession-mdma",
+    "title": "Possession of MDMA (Ecstasy/Molly)",
+    "statute": "O.C.G.A. § 16-13-30(a)",
+    "type": "Felony",
+    "description": "Unlawful possession of MDMA/Ecstasy/Molly (Schedule I). Georgia does not have a specific trafficking weight threshold for MDMA; large quantities are prosecuted as Possession with Intent to Distribute.",
+    "variables": [
+      {
+        "id": "offense_count",
+        "label": "Offense History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "2 to 15 years",
+            "fine": "Up to 100000"
+          },
+          {
+            "label": "2nd or Subsequent",
+            "sentence": "5 to 30 years",
+            "fine": "Up to 100000"
+          }
+        ]
+      }
+    ],
+    "notes": "No specific trafficking weight threshold exists for MDMA in Georgia. Large quantities may be charged as Possession with Intent to Distribute (PWID) under O.C.G.A. § 16-13-30(b) (5-30 years, 1st offense). Conditional discharge under O.C.G.A. § 16-13-2(a) may be available for eligible first offenders.",
+    "parole_info": "Crime Severity Level (CSL) 3-4 depending on offense history and amount. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
+  },
+  {
+    "id": "theft-by-shoplifting",
+    "title": "Theft by Shoplifting",
+    "statute": "O.C.G.A. § 16-8-14",
+    "type": "Wobbler",
+    "description": "A person commits theft by shoplifting when they, alone or in concert with others, take possession of or carry away merchandise, alter price tags, transfer merchandise between containers, interchange labels, or wrongfully cause the amount paid to be less than the merchant's stated price.",
+    "variables": [
+      {
+        "id": "value",
+        "label": "Value of Merchandise (USD)",
+        "unit": "$",
+        "type": "currency",
+        "ranges": [
+          {
+            "min": 0,
+            "max": 500,
+            "sentence": "Misdemeanor (Up to 12 months)",
+            "fine": 1000
+          },
+          {
+            "min": 500.01,
+            "max": null,
+            "sentence": "1 to 10 years (Felony)",
+            "fine": "Up to 100000"
+          }
+        ]
+      }
+    ],
+    "notes": "Felony threshold for shoplifting is $500 (lower than the $1,500 general theft threshold under O.C.G.A. § 16-8-12). Third or subsequent shoplifting conviction within 10 years is a felony regardless of the value of merchandise. Organized retail crime involving three or more persons may carry enhanced penalties.",
+    "recidivist_info": "Third or subsequent conviction within 10 years: Felony (1-10 years) regardless of value. Photo and fingerprints taken on second offense and forwarded to GBI. Repeated shoplifting convictions cannot be reduced below felony status on third or subsequent offense.",
+    "parole_info": "Crime Severity Level (CSL) varies: CSL 1 for misdemeanor, CSL 2-3 for felony depending on value and offense history. Felony requires serving 65% of sentence before parole eligibility. Not a BDV offense."
+  },
+  {
+    "id": "simple-assault",
+    "title": "Simple Assault",
+    "statute": "O.C.G.A. § 16-5-20",
+    "type": "Misdemeanor",
+    "description": "A person commits simple assault when they either attempt to commit a violent injury to another person or commit an act which places another in reasonable apprehension of immediately receiving a violent injury.",
+    "variables": [
+      {
+        "id": "circumstances",
+        "label": "Circumstances",
+        "type": "select",
+        "options": [
+          {
+            "label": "General",
+            "sentence": "Up to 12 months",
+            "fine": 1000,
+            "severity_level": "Misdemeanor"
+          },
+          {
+            "label": "Against person 65+ or pregnant woman",
+            "sentence": "Up to 12 months (High & Aggravated Misdemeanor)",
+            "fine": 5000,
+            "severity_level": "High & Aggravated Misdemeanor"
+          },
+          {
+            "label": "Against public school employee on school property",
+            "sentence": "Up to 12 months (High & Aggravated Misdemeanor)",
+            "fine": 5000,
+            "severity_level": "High & Aggravated Misdemeanor"
+          },
+          {
+            "label": "In a public transit vehicle or station",
+            "sentence": "Up to 12 months (High & Aggravated Misdemeanor)",
+            "fine": 5000,
+            "severity_level": "High & Aggravated Misdemeanor"
+          }
+        ]
+      }
+    ],
+    "notes": "Simple assault is a lesser included offense of aggravated assault. No physical contact is required - placing someone in reasonable apprehension of injury is sufficient.",
+    "parole_info": "Misdemeanor offense - parole does not apply. Sentence served as jail time (up to 12 months)."
+  },
+  {
+    "id": "simple-battery",
+    "title": "Simple Battery",
+    "statute": "O.C.G.A. § 16-5-23",
+    "type": "Misdemeanor",
+    "description": "A person commits simple battery when they either intentionally make physical contact of an insulting or provoking nature with the person of another, or intentionally cause physical harm to another.",
+    "variables": [
+      {
+        "id": "circumstances",
+        "label": "Circumstances",
+        "type": "select",
+        "options": [
+          {
+            "label": "General (no special circumstances)",
+            "sentence": "Up to 12 months",
+            "fine": 1000,
+            "severity_level": "Misdemeanor"
+          },
+          {
+            "label": "Against person 65+ years old",
+            "sentence": "Up to 12 months (High & Aggravated Misdemeanor)",
+            "fine": 5000,
+            "severity_level": "High & Aggravated Misdemeanor"
+          },
+          {
+            "label": "Against pregnant woman",
+            "sentence": "Up to 12 months (High & Aggravated Misdemeanor)",
+            "fine": 5000,
+            "severity_level": "High & Aggravated Misdemeanor"
+          },
+          {
+            "label": "Against police officer or first responder",
+            "sentence": "Up to 12 months (High & Aggravated Misdemeanor)",
+            "fine": 5000,
+            "severity_level": "High & Aggravated Misdemeanor"
+          }
+        ]
+      }
+    ],
+    "notes": "High and aggravated misdemeanor classification applies when the victim is 65+, pregnant, a police officer, corrections officer, or other specified persons. For family violence simple battery, see Family Violence Battery entry.",
+    "parole_info": "Misdemeanor offense - parole does not apply. Sentence served as jail time."
+  },
+  {
+    "id": "battery",
+    "title": "Battery",
+    "statute": "O.C.G.A. § 16-5-23.1",
+    "type": "Misdemeanor/Felony",
+    "description": "A person commits battery when they intentionally cause substantial physical harm or visible bodily harm to another. Visible bodily harm means bodily harm capable of being perceived by a person other than the victim, including bruises, lacerations, swelling, or abrasions.",
+    "variables": [
+      {
+        "id": "circumstances",
+        "label": "Circumstances",
+        "type": "select",
+        "options": [
+          {
+            "label": "General Battery",
+            "sentence": "Up to 12 months",
+            "fine": 1000,
+            "severity_level": "Misdemeanor"
+          },
+          {
+            "label": "Against person 65+ years old",
+            "sentence": "1 to 5 years (Felony)",
+            "fine": "Up to 100000",
+            "severity_level": "Felony"
+          },
+          {
+            "label": "Against police officer or first responder",
+            "sentence": "1 to 5 years (Felony)",
+            "fine": "Up to 100000",
+            "severity_level": "Felony"
+          }
+        ]
+      }
+    ],
+    "notes": "'Visible bodily harm' means bruises, lacerations, swelling, or abrasions perceptible to others. 'Substantial physical harm' means harm beyond what is visible. For family violence battery, see the Family Violence Battery entry.",
+    "parole_info": "CSL 1 for misdemeanor battery, CSL 3 for felony battery. Felony requires serving 65% of sentence before parole eligibility. Generally not a BDV offense."
+  },
+  {
+    "id": "aggravated-battery",
+    "title": "Aggravated Battery",
+    "statute": "O.C.G.A. § 16-5-24",
+    "type": "Felony",
+    "description": "A person commits aggravated battery when they maliciously cause bodily harm to another by depriving them of a member of their body, by rendering a member of their body useless, or by seriously disfiguring their body or a member thereof.",
+    "variables": [
+      {
+        "id": "victim",
+        "label": "Victim / Circumstance",
+        "type": "select",
+        "options": [
+          {
+            "label": "General Public",
+            "sentence": "1 to 20 years",
+            "fine": "Up to 100000"
+          },
+          {
+            "label": "Against police officer or corrections officer",
+            "sentence": "10 to 20 years (Mandatory min 10 years)",
+            "fine": "Up to 100000",
+            "must_serve": "10 years",
+            "probation_eligible": false
+          }
+        ]
+      }
+    ],
+    "notes": "Aggravated battery against a police officer, corrections officer, or other specified public safety officer carries a mandatory minimum of 10 years. 'Maliciously' means with the deliberate intention to do wrong.",
+    "parole_info": "Crime Severity Level (CSL) 5. Aggravated Battery is a Board-Designated Violent (BDV) offense requiring 90% of the sentence to be served before parole eligibility."
+  },
+  {
+    "id": "family-violence-battery",
+    "title": "Family Violence Battery",
+    "statute": "O.C.G.A. § 16-5-23.1(f)",
+    "type": "Misdemeanor/Felony",
+    "description": "Battery committed between past or present spouses, persons who are parents of the same child, parents and children, stepparents and stepchildren, foster parents and foster children, or other persons living or formerly living in the same household.",
+    "variables": [
+      {
+        "id": "offense_history",
+        "label": "Family Violence Conviction History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "Up to 12 months",
+            "fine": 1000,
+            "severity_level": "Misdemeanor"
+          },
+          {
+            "label": "2nd Offense",
+            "sentence": "Up to 12 months (mandatory min 10 days)",
+            "fine": 1000,
+            "must_serve": "10 days",
+            "severity_level": "Misdemeanor"
+          },
+          {
+            "label": "3rd or Subsequent Offense",
+            "sentence": "1 to 5 years (Felony)",
+            "fine": "Up to 100000",
+            "severity_level": "Felony"
+          }
+        ]
+      }
+    ],
+    "notes": "Prior family violence convictions from ANY jurisdiction count toward recidivist enhancement. 'Family violence' includes battery, simple battery, simple assault, stalking, criminal damage to property, unlawful restraint, or criminal trespass between household members. A Temporary Protective Order (TPO) is commonly issued alongside charges.",
+    "recidivist_info": "Second family violence conviction: mandatory minimum 10 days jail. Third or subsequent conviction: Felony (1-5 years). Prior convictions from other states count toward enhancement.",
+    "parole_info": "CSL 1 for misdemeanor, CSL 3 for felony family violence battery. Felony requires serving 65% of sentence before parole eligibility. May be designated BDV depending on circumstances."
+  },
+  {
+    "id": "voluntary-manslaughter",
+    "title": "Voluntary Manslaughter",
+    "statute": "O.C.G.A. § 16-5-2",
+    "type": "Felony",
+    "description": "A person commits voluntary manslaughter when they cause the death of another human being under circumstances which would otherwise be murder and if they act solely as the result of a sudden, violent, and irresistible passion resulting from serious provocation sufficient to excite such passion in a reasonable person.",
+    "base_penalty": {
+      "sentence": "1 to 20 years",
+      "fine": "Up to 100000"
+    },
+    "notes": "Voluntary manslaughter is a lesser included offense of murder. The key element is 'sudden heat of passion' caused by 'serious provocation' - the defendant must have acted immediately upon the provocation without time to cool down. If there was time to cool down, the charge reverts to murder.",
+    "parole_info": "Crime Severity Level (CSL) 5. Voluntary Manslaughter is a Board-Designated Violent (BDV) offense requiring 90% of the sentence to be served before parole eligibility."
+  },
+  {
+    "id": "involuntary-manslaughter",
+    "title": "Involuntary Manslaughter",
+    "statute": "O.C.G.A. § 16-5-3",
+    "type": "Felony/Misdemeanor",
+    "description": "A person commits involuntary manslaughter when they cause the death of another human being without any intention to do so.",
+    "variables": [
+      {
+        "id": "type",
+        "label": "Type of Involuntary Manslaughter",
+        "type": "select",
+        "options": [
+          {
+            "label": "During commission of unlawful act (not a felony)",
+            "sentence": "1 to 10 years (Felony)",
+            "fine": "Up to 100000",
+            "severity_level": "Felony"
+          },
+          {
+            "label": "During commission of lawful act in unlawful manner",
+            "sentence": "Up to 12 months (Misdemeanor)",
+            "fine": 1000,
+            "severity_level": "Misdemeanor"
+          }
+        ]
+      }
+    ],
+    "notes": "If death occurs during commission of a felony, the proper charge is typically felony murder under O.C.G.A. § 16-5-1(c), not involuntary manslaughter. Misdemeanor involuntary manslaughter is often seen in negligence-related deaths.",
+    "parole_info": "CSL varies: CSL 1 for misdemeanor involuntary manslaughter, CSL 5 for felony involuntary manslaughter. Felony may be designated BDV requiring 90% service."
+  },
+  {
+    "id": "vehicular-homicide",
+    "title": "Vehicular Homicide",
+    "statute": "O.C.G.A. § 40-6-393",
+    "type": "Felony/Misdemeanor",
+    "description": "Causing the death of another person through the violation of traffic laws. First degree involves DUI-related deaths or deaths caused by habitual violator/fleeing and eluding. Second degree involves deaths caused by other traffic violations.",
+    "variables": [
+      {
+        "id": "degree",
+        "label": "Degree",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Degree (DUI-related or Habitual Violator/Fleeing)",
+            "sentence": "3 to 15 years",
+            "fine": "Up to 100000",
+            "severity_level": "Felony"
+          },
+          {
+            "label": "2nd Degree (other traffic violation)",
+            "sentence": "Up to 12 months",
+            "fine": 1000,
+            "severity_level": "Misdemeanor"
+          }
+        ]
+      }
+    ],
+    "notes": "1st degree vehicular homicide requires proof that the defendant was DUI (O.C.G.A. § 40-6-391), a habitual violator (O.C.G.A. § 40-5-58), or fleeing/eluding (O.C.G.A. § 40-6-395) at the time. 2nd degree requires only that a traffic violation directly caused the death. Multiple deaths from a single incident may result in multiple counts.",
+    "parole_info": "Crime Severity Level (CSL) 5 for 1st degree vehicular homicide. May be designated BDV requiring 90% of sentence before parole eligibility. 2nd degree (misdemeanor): parole does not apply."
+  },
+  {
+    "id": "rape",
+    "title": "Rape",
+    "statute": "O.C.G.A. § 16-6-1",
+    "type": "Felony",
+    "description": "A person commits rape when they have carnal knowledge of a female forcibly and against her will, or of a female who is less than 10 years of age. Carnal knowledge in rape occurs when there is any penetration of the female sex organ by the male sex organ.",
+    "variables": [
+      {
+        "id": "victim_age",
+        "label": "Victim Age",
+        "type": "select",
+        "options": [
+          {
+            "label": "Victim 10 years of age or older",
+            "sentence": "Life or 25 years to Life (split sentence)",
+            "must_serve": "25 years",
+            "probation_eligible": false,
+            "other": "Mandatory 25-year minimum. Split sentence: minimum 25 years imprisonment followed by probation for life. Lifetime sex offender registration required."
+          },
+          {
+            "label": "Victim under 10 years of age",
+            "sentence": "Life Without Parole or Life",
+            "must_serve": "Life",
+            "probation_eligible": false,
+            "other": "Lifetime sex offender registration required."
+          }
+        ]
+      }
+    ],
+    "notes": "Rape is a '7 Deadly Sin' offense. First Offender treatment is PROHIBITED. Death penalty appears in statute but has been held unconstitutional for rape (Coker v. Georgia, 1977; Kennedy v. Louisiana, 2008).",
+    "recidivist_info": "Second conviction for rape or any serious violent felony mandates Life Without Parole under O.C.G.A. § 17-10-7(b)(2). Lifetime sex offender registration required under O.C.G.A. § 42-1-12.",
+    "parole_info": "As a '7 Deadly Sin' offense, rape is generally not parole-eligible by statute except for life sentences (parole eligibility after 30 years). Conspiracy or attempt to commit rape is CSL 8; however, the associated percentage (65/75/90%) only applies to the CSL 8 portion of the sentence."
+  },
+  {
+    "id": "sexual-battery",
+    "title": "Sexual Battery",
+    "statute": "O.C.G.A. § 16-6-22.1",
+    "type": "Misdemeanor/Felony",
+    "description": "A person commits sexual battery when they intentionally make physical contact with the intimate parts of the body of another person without the consent of that person.",
+    "variables": [
+      {
+        "id": "circumstances",
+        "label": "Circumstances",
+        "type": "select",
+        "options": [
+          {
+            "label": "General (victim 16+, 1st offense)",
+            "sentence": "Up to 12 months",
+            "fine": 1000,
+            "severity_level": "Misdemeanor",
+            "other": "Sex offender registration required"
+          },
+          {
+            "label": "Victim under 16 years of age",
+            "sentence": "1 to 5 years (Felony)",
+            "fine": "Up to 100000",
+            "severity_level": "Felony",
+            "other": "Sex offender registration required"
+          },
+          {
+            "label": "2nd or subsequent offense (any victim)",
+            "sentence": "1 to 5 years (Felony)",
+            "fine": "Up to 100000",
+            "severity_level": "Felony",
+            "other": "Sex offender registration required"
+          }
+        ]
+      }
+    ],
+    "notes": "'Intimate parts' means the primary genital area, anus, groin, inner thighs, or buttocks of a male or female and the breasts of a female. Consent of a person under 16 is not a defense.",
+    "parole_info": "CSL varies: CSL 1 for misdemeanor, CSL 3 for felony sexual battery. Felony requires serving 65% of sentence before parole eligibility. Not a BDV offense."
+  },
+  {
+    "id": "firearm-by-felon",
+    "title": "Possession of Firearm by Convicted Felon",
+    "statute": "O.C.G.A. § 16-11-131",
+    "type": "Felony",
+    "description": "It is unlawful for any person who has been convicted of a felony to receive, possess, or transport any firearm. Also applies to persons on first offender probation for a felony.",
+    "variables": [
+      {
+        "id": "offense_history",
+        "label": "Offense History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "1 to 10 years",
+            "fine": "Up to 100000",
+            "severity_level": "Felony"
+          },
+          {
+            "label": "2nd or Subsequent Offense",
+            "sentence": "5 to 10 years",
+            "fine": "Up to 100000",
+            "severity_level": "Felony"
+          }
+        ]
+      }
+    ],
+    "notes": "Also applies to first offender probationers and persons convicted of certain forcible misdemeanors. 'Firearm' includes handguns, rifles, shotguns, and any weapon designed to propel a projectile by explosive or electrical charge. Certain exceptions exist for antique firearms. Civil rights restoration after 5 years (non-violent felonies) may restore firearm rights.",
+    "parole_info": "Crime Severity Level (CSL) 3. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
+  },
+  {
+    "id": "carrying-weapon-unauthorized",
+    "title": "Carrying Weapon in Unauthorized Location",
+    "statute": "O.C.G.A. § 16-11-127",
+    "type": "Misdemeanor/Felony",
+    "description": "Carrying a weapon or long gun in an unauthorized location such as a government building, courthouse, jail or prison, place of worship without permission, state mental health facility, nuclear power facility, or within a school safety zone. Georgia enacted constitutional carry (SB 319) effective April 12, 2022, eliminating the weapons carry license requirement for lawful gun owners, but carry remains prohibited in certain locations.",
+    "variables": [
+      {
+        "id": "location",
+        "label": "Location",
+        "type": "select",
+        "options": [
+          {
+            "label": "Government building, courthouse, or place of worship",
+            "sentence": "Up to 12 months",
+            "fine": 1000,
+            "severity_level": "Misdemeanor"
+          },
+          {
+            "label": "School safety zone (within 1,000 feet)",
+            "sentence": "2 to 10 years (Felony)",
+            "fine": 10000,
+            "severity_level": "Felony"
+          },
+          {
+            "label": "Nuclear power facility",
+            "sentence": "1 to 10 years (Felony)",
+            "fine": "Up to 100000",
+            "severity_level": "Felony"
+          }
+        ]
+      }
+    ],
+    "notes": "Georgia's constitutional carry law (SB 319, effective April 12, 2022) eliminated the weapons carry license requirement for lawful adults. However, prohibited locations still apply regardless of license status. Prohibited persons (convicted felons, minors) cannot carry anywhere.",
+    "parole_info": "CSL varies by location. School zone felony: CSL 3, requires 65% service. Misdemeanor: parole does not apply."
+  },
+  {
+    "id": "firearm-during-felony",
+    "title": "Use of Firearm During Commission of a Felony",
+    "statute": "O.C.G.A. § 16-11-106",
+    "type": "Felony",
+    "description": "Any person who uses a firearm while committing a felony is subject to an additional mandatory consecutive sentence. This sentence is served in addition to and consecutive with any other sentence imposed for the underlying felony.",
+    "variables": [
+      {
+        "id": "offense_history",
+        "label": "Offense History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "5 years mandatory consecutive",
+            "must_serve": "5 years",
+            "probation_eligible": false,
+            "other": "Mandatory 5-year consecutive sentence. Cannot be suspended, probated, stayed, deferred, or withheld."
+          },
+          {
+            "label": "2nd Offense",
+            "sentence": "10 years mandatory consecutive",
+            "must_serve": "10 years",
+            "probation_eligible": false,
+            "other": "Mandatory 10-year consecutive sentence. Cannot be suspended, probated, stayed, deferred, or withheld."
+          },
+          {
+            "label": "3rd or Subsequent Offense",
+            "sentence": "15 years mandatory consecutive",
+            "must_serve": "15 years",
+            "probation_eligible": false,
+            "other": "Mandatory 15-year consecutive sentence. Cannot be suspended, probated, stayed, deferred, or withheld."
+          }
+        ]
+      }
+    ],
+    "notes": "This sentence is CONSECUTIVE to the underlying felony sentence, not concurrent. The firearm enhancement cannot be merged with other charges. This is a separate charge that must be indicted and proven beyond a reasonable doubt. 'Use' includes having the firearm on one's person during the commission of the felony.",
+    "parole_info": "The mandatory consecutive sentence must be served in full with no possibility of parole. This is served after the sentence for the underlying felony (though the underlying felony sentence may be parolable based on its own CSL)."
+  },
+  {
+    "id": "robbery",
+    "title": "Robbery",
+    "statute": "O.C.G.A. § 16-8-40",
+    "type": "Felony",
+    "description": "A person commits robbery when, with intent to commit theft, they take property of another from the person or the immediate presence of another by use of force, intimidation, threat, coercion, or by placing such person in fear of immediate serious bodily injury, or by sudden snatching.",
+    "variables": [
+      {
+        "id": "method",
+        "label": "Method",
+        "type": "select",
+        "options": [
+          {
+            "label": "By Force, Intimidation, or Threat",
+            "sentence": "1 to 20 years",
+            "fine": "Up to 100000"
+          },
+          {
+            "label": "By Sudden Snatching",
+            "sentence": "1 to 10 years",
+            "fine": "Up to 100000"
+          }
+        ]
+      }
+    ],
+    "notes": "Robbery by sudden snatching carries a lesser penalty of 1-10 years. If a weapon is used, the charge is elevated to Armed Robbery under O.C.G.A. § 16-8-41 with a mandatory 10-year minimum. Robbery is NOT a '7 Deadly Sin' offense (armed robbery is).",
+    "parole_info": "Crime Severity Level (CSL) 5 for robbery by force/intimidation. CSL 4 for robbery by sudden snatching. Robbery by force is a Board-Designated Violent (BDV) offense requiring 90% of sentence before parole eligibility."
+  },
+  {
+    "id": "entering-automobile",
+    "title": "Entering Automobile",
+    "statute": "O.C.G.A. § 16-8-18",
+    "type": "Felony",
+    "description": "A person commits the offense of entering an automobile when they enter any automobile or other motor vehicle with the intent to commit a theft or felony therein.",
+    "base_penalty": {
+      "sentence": "1 to 5 years",
+      "fine": "Up to 100000"
+    },
+    "notes": "Intent to commit theft or felony at the time of entry must be proven. Merely entering an unlocked vehicle without criminal intent is insufficient. This offense is frequently charged alongside theft by taking or criminal damage to property. Does not require forced entry - entering an unlocked vehicle with criminal intent is sufficient.",
+    "parole_info": "Crime Severity Level (CSL) 2. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
+  },
+  {
+    "id": "criminal-damage-1st",
+    "title": "Criminal Damage to Property in the First Degree",
+    "statute": "O.C.G.A. § 16-7-22",
+    "type": "Felony",
+    "description": "A person commits criminal damage to property in the first degree when they knowingly and without authority interfere with any property in a manner so as to endanger human life, or knowingly and without authority damage the property of another person in excess of $500.",
+    "base_penalty": {
+      "sentence": "1 to 10 years",
+      "fine": "Up to 100000"
+    },
+    "notes": "Damage exceeding $500 or damage that endangers human life elevates to first degree (felony). Damage to utility property, traffic control devices, or fire safety equipment is automatically first degree regardless of value.",
+    "parole_info": "Crime Severity Level (CSL) 3. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
+  },
+  {
+    "id": "criminal-damage-2nd",
+    "title": "Criminal Damage to Property in the Second Degree",
+    "statute": "O.C.G.A. § 16-7-23",
+    "type": "Misdemeanor",
+    "description": "A person commits criminal damage to property in the second degree when they intentionally damage any property of another person without consent and the value of the damage is $500 or less.",
+    "base_penalty": {
+      "sentence": "Up to 12 months",
+      "fine": 1000
+    },
+    "notes": "Damage of $500 or less. If the damage exceeds $500 or endangers human life, the offense is elevated to Criminal Damage in the First Degree (felony).",
+    "parole_info": "Misdemeanor offense - parole does not apply."
+  },
+  {
+    "id": "criminal-trespass",
+    "title": "Criminal Trespass",
+    "statute": "O.C.G.A. § 16-7-21",
+    "type": "Misdemeanor",
+    "description": "A person commits criminal trespass when they knowingly and without authority enter upon the land or premises of another person for an unlawful purpose, after receiving notice from the owner that such entry is forbidden, or remain upon the land or premises after being ordered to depart.",
+    "base_penalty": {
+      "sentence": "Up to 12 months",
+      "fine": 1000
+    },
+    "notes": "Criminal trespass also includes intentionally damaging property of another ($500 or less) and knowingly and maliciously interfering with the possession or use of property without consent. Notice to depart may be verbal or by posted signs.",
+    "parole_info": "Misdemeanor offense - parole does not apply."
+  },
+  {
+    "id": "theft-by-deception",
+    "title": "Theft by Deception",
+    "statute": "O.C.G.A. § 16-8-3",
+    "type": "Wobbler",
+    "description": "A person commits theft by deception when they obtain property by any deceitful means or artful practice with the intention of depriving the owner of the property.",
+    "variables": [
+      {
+        "id": "value",
+        "label": "Value (USD)",
+        "unit": "$",
+        "type": "currency",
+        "ranges": [
+          {
+            "min": 0,
+            "max": 1500,
+            "sentence": "Misdemeanor (Up to 12 months)",
+            "fine": 1000
+          },
+          {
+            "min": 1500.01,
+            "max": 5000,
+            "sentence": "1-5 years (Felony)",
+            "fine": "Up to 100000"
+          },
+          {
+            "min": 5000.01,
+            "max": 24999.99,
+            "sentence": "1-10 years (Felony)",
+            "fine": "Up to 100000"
+          },
+          {
+            "min": 25000,
+            "max": null,
+            "sentence": "2-20 years (Felony)",
+            "fine": "Up to 100000"
+          }
+        ]
+      }
+    ],
+    "notes": "Theft by deception includes creating or confirming false impressions of fact, failing to correct false impressions, preventing someone from acquiring relevant information, and selling or encumbering property while failing to disclose a known lien or adverse claim. Same value thresholds as Theft by Taking under O.C.G.A. § 16-8-12.",
+    "parole_info": "Crime Severity Level (CSL) varies by value: CSL 1 (misdemeanor, under $1,500), CSL 2 ($1,500-$5,000), CSL 3 ($5,000-$25,000), CSL 4 ($25,000+). Felony requires serving 65% of sentence before parole eligibility. Not a BDV offense."
+  },
+  {
+    "id": "arson-1st",
+    "title": "Arson in the First Degree",
+    "statute": "O.C.G.A. § 16-7-60",
+    "type": "Felony",
+    "description": "A person commits arson in the first degree when, by means of fire or explosive, they knowingly damage or cause another to damage any dwelling house of another without consent, or any structure or property in which a person is present.",
+    "base_penalty": {
+      "sentence": "1 to 20 years",
+      "fine": "Up to 50000"
+    },
+    "notes": "First degree arson applies to dwelling houses and occupied structures. If death results from arson, the charge may be elevated to felony murder under O.C.G.A. § 16-5-1(c). Arson to defraud an insurer is separately punishable.",
+    "parole_info": "Crime Severity Level (CSL) 5. Arson in the First Degree is a Board-Designated Violent (BDV) offense requiring 90% of the sentence to be served before parole eligibility."
+  },
+  {
+    "id": "arson-2nd",
+    "title": "Arson in the Second Degree",
+    "statute": "O.C.G.A. § 16-7-61",
+    "type": "Felony",
+    "description": "A person commits arson in the second degree when, by means of fire or explosive, they knowingly damage or cause another to damage any building, vehicle, or other property of another without consent, or any property owned by themselves with intent to defraud.",
+    "base_penalty": {
+      "sentence": "1 to 10 years",
+      "fine": "Up to 25000"
+    },
+    "notes": "Second degree arson applies to non-dwelling structures and unoccupied property. Includes burning one's own property to defraud an insurance company under O.C.G.A. § 16-7-61.",
+    "parole_info": "Crime Severity Level (CSL) 3. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
+  },
+  {
+    "id": "pwid-schedule-1-2",
+    "title": "Possession with Intent to Distribute (PWID) - Schedule I/II",
+    "statute": "O.C.G.A. § 16-13-30(b)",
+    "type": "Felony",
+    "description": "Possession of a Schedule I or II controlled substance with intent to distribute, sell, deliver, or manufacture. Intent to distribute may be inferred from quantity, packaging, scales, cash, or other circumstantial evidence. Commonly charged for amounts between simple possession and trafficking thresholds.",
+    "variables": [
+      {
+        "id": "offense_count",
+        "label": "Offense History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "5 to 30 years",
+            "fine": "Up to 100000"
+          },
+          {
+            "label": "2nd or Subsequent",
+            "sentence": "10 to 40 years or Life",
+            "fine": "Up to 200000"
+          }
+        ]
+      }
+    ],
+    "notes": "PWID is charged when drug quantity exceeds personal use but falls below trafficking thresholds. Common indicators of intent: individually packaged drugs, scales, large cash amounts, multiple cell phones. Sentences significantly exceed simple possession (2-15 years vs. 5-30 years for 1st offense). Applies to cocaine, methamphetamine, heroin, fentanyl, MDMA, and other Schedule I/II drugs.",
+    "parole_info": "Crime Severity Level (CSL) 5-6 depending on substance and amount. Requires serving 65% of sentence before parole eligibility. May be designated BDV depending on circumstances."
+  },
+  {
+    "id": "pwid-schedule-3-4-5",
+    "title": "Possession with Intent to Distribute (PWID) - Schedule III/IV/V",
+    "statute": "O.C.G.A. § 16-13-30(c)",
+    "type": "Felony",
+    "description": "Possession of a Schedule III, IV, or V controlled substance with intent to distribute, sell, deliver, or manufacture. Common Schedule III-V drugs include steroids, ketamine (III), Xanax, Valium (IV), and codeine cough syrup (V).",
+    "variables": [
+      {
+        "id": "offense_count",
+        "label": "Offense History",
+        "type": "select",
+        "options": [
+          {
+            "label": "1st Offense",
+            "sentence": "1 to 10 years",
+            "fine": "Up to 100000"
+          },
+          {
+            "label": "2nd or Subsequent",
+            "sentence": "1 to 10 years",
+            "fine": "Up to 200000"
+          }
+        ]
+      }
+    ],
+    "notes": "Significantly lesser penalties than PWID Schedule I/II. Flunitrazepam (Rohypnol) carries enhanced penalties similar to Schedule I/II. PWID is charged based on quantity, packaging, and other circumstantial evidence of distribution intent.",
+    "parole_info": "Crime Severity Level (CSL) 2-3 depending on substance and amount. Requires serving 65% of sentence before parole eligibility. Not a BDV offense."
   }
 ]

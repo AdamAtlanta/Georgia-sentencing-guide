@@ -1,39 +1,28 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useMemo, useState } from 'react';
 import { Search } from 'lucide-react';
 import { searchCrimes } from '@/utils/search';
 
 export default function SearchInput({ onSelect }) {
     const [query, setQuery] = useState('');
-    const [results, setResults] = useState([]);
-    const [isOpen, setIsOpen] = useState(false);
     const [hasSelected, setHasSelected] = useState(false);
 
-    useEffect(() => {
-        if (hasSelected) {
-            return;
-        }
-        if (query.length > 0) {
-            const hits = searchCrimes(query);
-            setResults(hits);
-            setIsOpen(true);
-        } else {
-            setResults([]);
-            setIsOpen(false);
-        }
+    const results = useMemo(() => {
+        if (hasSelected || query.length === 0) return [];
+        return searchCrimes(query);
     }, [query, hasSelected]);
+    const isOpen = !hasSelected && query.length > 0;
 
     const handleSelect = (crime) => {
         setHasSelected(true);
         setQuery(crime.title);
-        setIsOpen(false);
         onSelect(crime);
     };
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (event) => {
         setHasSelected(false);
-        setQuery(e.target.value);
+        setQuery(event.target.value);
     };
 
     return (
@@ -60,13 +49,8 @@ export default function SearchInput({ onSelect }) {
                             onClick={() => handleSelect(crime)}
                         >
                             <div className="flex flex-row items-baseline gap-2">
-                                <span className="font-serif font-bold text-[#0B1120] text-lg group-hover:text-[#C5A067] transition-colors">
-                                    {crime.title}
-                                </span>
-                                <span className="text-slate-400 text-xs tracking-wider uppercase whitespace-nowrap">
-                                    {/* Explicit space added before O.C.G.A. */}
-                                    &nbsp;&nbsp;{crime.statute}
-                                </span>
+                                <span className="font-serif font-bold text-[#0B1120] text-lg group-hover:text-[#C5A067] transition-colors">{crime.title}</span>
+                                <span className="text-slate-400 text-xs tracking-wider uppercase whitespace-nowrap">&nbsp;&nbsp;{crime.statute}</span>
                             </div>
                         </li>
                     ))}
