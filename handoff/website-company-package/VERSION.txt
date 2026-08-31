@@ -1,0 +1,6 @@
+Swingle Levin Georgia Sentencing Guide website handoff
+Package date: August 31, 2026
+Live tool: https://georgia-sentencing-guide.vercel.app/
+Legal data reviewed: August 29, 2026
+Required top-of-page disclaimer added: August 31, 2026
+Maintainer contact: Adam@SwingleLevin.com

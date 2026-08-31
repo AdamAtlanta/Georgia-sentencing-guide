@@ -1,6 +1,6 @@
 /* global caches, fetch, Request, Response, self, URL */
 /* Georgia Sentencing Guide offline service worker. */
-const CACHE_VERSION = "2026-08-29-1";
+const CACHE_VERSION = "2026-08-31-1";
 const CACHE_PREFIX = "ga-sentencing-guide";
 const APP_CACHE = `${CACHE_PREFIX}-app-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `${CACHE_PREFIX}-runtime-${CACHE_VERSION}`;

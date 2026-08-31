@@ -235,10 +235,12 @@ export default function PwaRegistration() {
     return null;
   }
 
-  let statusMessage = "Ready to install on your Pixel.";
+  let statusMessage = "Ready to install this guide.";
 
-  if (newerReleaseReady) {
+  if (dataUpdateAvailable) {
     statusMessage = "A newer legal-data release is available.";
+  } else if (updateReady) {
+    statusMessage = "A newer guide update is available.";
   } else if (!isOnline) {
     statusMessage = "Offline mode: using the saved guide.";
   }
@@ -261,7 +263,7 @@ export default function PwaRegistration() {
             onClick={installApp}
             className="rounded-lg border border-[#C5A067] px-3 py-2 font-semibold text-[#e2c797] transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0B1120]"
           >
-            Install on Pixel
+            Install guide
           </button>
         )}
         {newerReleaseReady && (

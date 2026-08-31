@@ -10,6 +10,32 @@ export default function Home() {
 
   return (
     <main className="min-h-screen flex flex-col font-sans">
+      <aside
+        aria-labelledby="legal-disclaimer-title"
+        className="border-b border-amber-300 bg-amber-50 text-[#0B1120]"
+        role="note"
+      >
+        <div className="mx-auto max-w-5xl px-4 py-4 sm:py-5">
+          <p className="text-sm leading-6 sm:text-base sm:leading-7">
+            <strong id="legal-disclaimer-title" className="font-bold">
+              This does not provide legal advice.
+            </strong>{' '}
+            Your use of this webpage does not create an attorney client relationship
+            between the user of this webpage and any attorney at Swingle Levin, LLC.
+            The results may contain errors or incomplete information and you should
+            still consult with an attorney before relying on this information. If you
+            find errors, please contact{' '}
+            <a
+              className="font-semibold text-blue-800 underline decoration-blue-800/50 underline-offset-2 hover:text-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 focus:ring-offset-amber-50"
+              href="mailto:Adam@SwingleLevin.com?subject=Georgia%20Sentencing%20Guide%20Correction"
+            >
+              Adam@SwingleLevin.com
+            </a>
+            .
+          </p>
+        </div>
+      </aside>
+
       {/* Hero Section */}
       <div className="bg-[#0B1120] text-white pt-12 pb-16 border-b-4 border-[#C5A067]">
         <div className="max-w-4xl mx-auto px-4 text-center space-y-5">

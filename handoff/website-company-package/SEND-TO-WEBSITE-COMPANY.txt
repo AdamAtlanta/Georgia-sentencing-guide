@@ -1,0 +1,26 @@
+Subject: Please add the Georgia Sentencing Guide as a new Swingle Levin website page
+
+Hello,
+
+Please add our Georgia Sentencing Guide as a new public page on the Swingle Levin website. The preferred URL is:
+
+https://swinglelevin.com/georgia-sentencing-guide/
+
+The goal is to create a useful, indexable firm-site resource that can attract search traffic while keeping visitors on swinglelevin.com. Please use the firm's normal header, navigation, footer, contact controls, and analytics, then embed the maintained live guide rather than sending visitors immediately to a separate website.
+
+Live guide:
+https://georgia-sentencing-guide.vercel.app/
+
+The attached package includes ready-to-paste embed code, recommended SEO and page copy, the required disclaimer, search and privacy notes, and a publication checklist. Please place the page under Resources and add relevant internal links from our existing practice-area pages.
+
+The complete legal notice must remain clearly visible at the top of the page and at the top of the embedded guide. Please do not hide it inside a pop-up, accordion, or dismissible banner.
+
+Please keep the visible full-screen link below the embed so iPhone and Pixel users can install the guide. Do not copy the guide's service worker or compiled files into the root of swinglelevin.com; the technical notes explain why the live Vercel embed should remain isolated.
+
+Please send us a preview link before publishing and confirm that the final page has been tested on both an iPhone and an Android phone.
+
+Thank you,
+
+Adam Levin
+Swingle Levin, LLC
+Adam@SwingleLevin.com
